@@ -1,0 +1,7 @@
+<persona nombre="Fernando"
+		apellidos="Fernandez Fernandez">
+	<contacto telefono="661856232"
+			direccion="Calle Flor"
+			email="12342@sdf.com">
+	</contacto>
+</persona>
