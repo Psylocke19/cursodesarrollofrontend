@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Condiciones</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Condiciones </h1>
+<script>
+	var age = 10;
+	if ( age < 18 ) 
+	{
+		alert("under age");
+	}
+	
+	var age;
+	age = prompt ("dime tu edad");
+//Condición básica
+	if ( age < 18 )
+	{
+	alert("under age");
+	}
+	
+//Condición con bifurcación	
+	var ifIsAdult = age >= 18;
+	if (ifIsAdult == true)
+	{
+		alert ("Adult");
+	} else  //Cuando es menor de edad
+	{
+		if (age< 3) 
+		{
+			alert ("It's a baby");
+		} else if (age >= 3 && age < 13)
+		{
+			alert ("It's a child");
+		} else if (age >= 13 && age < 18)
+		{
+			alert ("It's a teenager");
+		}
+	}
+
+//Ejemplos booleanos
+	if (true) 
+	{
+		alert ("It's true");
+	}
+	if (false)
+	{
+		alert ("It's false");
+	}
+
+	
+</script>
+	</body>
+</html>

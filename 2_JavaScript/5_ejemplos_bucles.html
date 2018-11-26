@@ -1,0 +1,57 @@
+Que pregunte al usuario el principio y el final de la cuenta:
+ - Si pone inicio 3 y fin 7: 3, 4, 5, 6
+ - Si pone inicio 5 y fin 2: 5, 4, 3
+
+<!DOCTYPE html> 
+<html lang="es">
+	<head> 
+		<title>Bucles</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Bucles</h1>
+<script>
+
+var inicio = prompt ("Dime el principio");
+var fin = prompt ("Dime el final");
+inicio = parseFloat (inicio);
+fin = parseFloat (fin);
+
+contador = inicio;
+if (inicio < fin) 
+{
+	while (contador < fin)
+	{
+	alert (contador);
+	contador = contador + 1;
+	}
+}
+else if (inicio > fin)
+{
+	while (contador > fin)
+	{
+	alert (contador);
+	contador = contador - 1;
+	}
+}
+
+// - Con el bucle fuera del if (o el if dentro del while)
+   - Sin ningún "if" (dos bucles)
+   - Con un único "while", sin If
+
+
+contador = inicio
+while (inicio < fin)
+	{
+	alert (contador);
+	contador = contador + fin;
+	}
+while (inicio > fin)
+	{
+	alert (contador);
+	contador = contador - fin;
+	}
+	
+</script>
+	</body>
+</html>
