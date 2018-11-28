@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head> 
+		<title>Strings, métodos y propiedades</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Strings, métodos y propiedades</h1>
+<script>
+	// Caracteres especiales
+	alert ("Hola Juan: \n \t -Tu edad es: \n \t -\"20  años\"");
+	
+	var texto = prompt ("Introduzca un texto"); 
+	document.write ("Su texto: <br/>"); 
+	document.write (texto + "<br/>"); 
+		document.write ("<br/>"); 
+	// Longitud texto
+	document.write ("Longitud = " + texto.length);  
+		document.write ("<br/>"); 
+	// Mayúsculas y minúsculas
+	document.write ("En mayúsculas: " + texto.toUpperCase ()); 
+		document.write ("<br/>"); 
+	document.write ("En minúculas: " + texto.toLowerCase ()); 
+		document.write ("<br/>"); 
+	// Posición caracteres
+	document.write ("Primer caracter: " + texto.charAt (0)); 
+		document.write ("<br/>"); 
+	document.write ("Tercer caracter: " + texto.charAt (2));
+		document.write ("<br/>"); 
+	document.write ("Quinto caracter: " + texto.charAt (4));
+		document.write ("<br/>"); 
+	// Seleccionar trozo de texto
+	document.write ("La mitad del texto: " + texto.substring (texto.length / 2)); // Segunda mitad
+		document.write ("<br/>"); 
+	document.write ("La mitad del texto: " + texto.substring (0,texto.length / 2)); // Primera mitad
+		document.write ("<br/>"); 
+	
+// Ejercicios:
+	// 1.Hacer la primera letra mayúsculas y el resto minúculas
+		// - "HOLA" --> "Hola"
+		// - "hola" --> "Hola"
+	document.write (texto.charAt (0).toUpperCase() + texto.substring(1).toLowerCase()); 
+	// 2.Convertir la primera letra de cada palabra a mayúsculas y las demás en minúsculas
+		// - "JUAN PEREZ" --> "Juan Perez"
+
+	var spliTexto = texto.split (" ")
+	document.write ((texto.charAt (0).toUpperCase() + spliTexto [0].substring(1).toLowerCase())+ " " +(spliTexto [1]. charAt (0). toUpperCase () + spliTexto [1].substring (1, texto.length). toLowerCase()));
+	
+	// 3. Mostrar sólo las iniciales
+		// juan PEREZ" --> "J.P"
+	
+	var spliTexto = texto.split (" ")
+	document.write (spliTexto [0]. charAt (0). toUpperCase () + spliTexto [1]. charAt (0). toUpperCase ()); 
+	
+	
+	
+</script>
+	</body>
+</html>

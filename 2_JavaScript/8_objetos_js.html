@@ -11,7 +11,28 @@
 	// write: es una función propia del objeto document, es decir, un método
 	document.write ("Un texto cualquiera"); 
 	document.write("<h2>Mostrando texto</h2>");	
+	
+	
+	var nombre = "";
+	var textoEdad = "";
+	var edad = parseInt (textoEdad); 
+	
+	// parseInt: convierte texto en número
+	// "27" -> 27
+	// "texto sin num" -> NaN
+	
+	while (nombre == "" || isNaN (nombre)) == false)
+		{
+		nombre = prompt ("Indique su nombre:");
+		}
+	
+	while (isNaN (parseInt(edad)) || edad <= 0)
+		{
+		textoEdad = prompt ("Indique su edad:");
+		edad = parseInt (textoEdad);
+		}
+	
+	document.write (" Anda, te llamas " + nombre + " y tienes " + edad + " años "); 
 </script>
-
 	</body>
 </html>
