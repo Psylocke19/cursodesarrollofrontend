@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head> 
+		<title>Strings, métodos y propiedades</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Strings, métodos y propiedades</h1>
+<script>
+
+var texto = "juanito rodriguez lopez perez de todos los santos por sergio heredero de isuldor";
+var posEspacio1 = texto.indexOf (" "); 
+var letra_1 = texto.charAt (0).toUpperCase (); 
+document.write (texto + "<br/>"); 
+document.write (letra_1);
+
+var letra_2 = texto.charAt (posEspacio1 +1).toUpperCase (); 
+document.write (letra_2); 
+
+var posEspacio2 = texto.indexOf (" ", posEspacio1 + 1); 
+var letra_3 = texto.charAt (posEspacio2 +1).toUpperCase (); 
+document.write (letra_3); 
+
+var posEspacio3 = texto.indexOf (" ", posEspacio2 + 1); 
+var letra_4 = texto.charAt (posEspacio3 +1).toUpperCase (); 
+document.write (letra_4); 
+
+//Bucle
+var posEspacio = 0; 
+var iniciales = ""; 
+var letra = texto.charAt (0).toUpperCase (); 
+while (posEspacio >= 0)
+	{
+		iniciales = iniciales + letra; 
+		posEspacio = texto.indexOf (" ", posEspacio +1); 
+		letra = texto.charAt (posEspacio +1).toUpperCase (); 
+	}
+	
+document.write (iniciales + "<br/>"); 
+
+//
+var posEspacio1 = texto.indexOf (" "); 
+var inicial = texto.charAt (0).toUpperCase (); 
+var restoPalabra = texto.substring (1, posEspacio1). toLowerCase (); 
+var propperCase = inicial + restoPalabra
+var posEspacio2; 
+
+while (posEspacio1 >= 0)
+	{
+	posEspacio2 = texto.indexOf (" ", posEspacio1 +1);
+		if (posEspacio2 == -1)
+		{
+		posEspacio2 = texto.length; 
+		}
+	inicial = texto.charAt (posEspacio1 + 1).toUpperCase (); 
+	restoPalabra =texto.substring (posEspacio1 +2, posEspacio2); 
+	propperCase = propperCase + " " + inicial + restoPalabra;
+	posEspacio1 = texto.indexOf (" ", posEspacio1 +1); 
+	}
+document.write (propperCase + "<br/>"); 
+</script>
+	</body>
+</html>

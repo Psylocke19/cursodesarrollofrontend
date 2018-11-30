@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head> 
+		<title>Ejemplos objetos</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Ejemplos objetos</h1>
+<script>
+	// Llamamos a la función constructora del objeto básico de JS. Con la palabra clave new, le decimos a JS que queremos un nuevo objeto (invocando a alguna función constructora) del tiempo que sea (en este caso es el básico de JS)
+	var miPrimerObj = new Object (); 
+	miPrimerObj.unSubValor = 10; 
+	miPrimerObj.otraPropiedad = "Un texto"; 
+	miPrimerObj.atributoObjeto = new Object (); 
+	miPrimerObj.variableMiembro = true; 
+	
+	var persona_1 = new Object (); 
+	persona_1.nombre = "Ana"; 
+	persona_1.apellido_1 = "Pérez"; 
+	persona_1.apellido_2 = "Rodríguez"; 
+	persona_1.edad = 25; 
+	//persona_1.salario = prompt ("Dime el salario de " + persona_1.nombre); 
+	persona_1.datos = persona_1.nombre + " " + persona_1.apellido_1 + " "+ persona_1.apellido_2 + " "+ persona_1.edad;
+	//persona_1.salario = parseFloat (persona_1.salario); 
+	//if (persona_1.salario > 0)
+		{
+		persona_1.tieneTrabajo = true; 
+		}
+	//else 
+		{
+		persona_1.tieneTrabajo = false; 
+		} 
+	
+	document.write (persona_1.apellido_1 + " " + persona_1.apellido_2 + " " + persona_1.nombre); 
+	document.write ("<br/>");
+	document.write ("Edad:" + persona_1.edad); 
+	//if (persona_1.tieneTrabajo)
+		{
+		//document.write ("<br/> Tiene trabajo"); 
+		}
+	//else 
+		{
+		//document.write ("<br/> No tiene trabajo"); 
+		}
+	//document.write ("<br/> Salario: " + persona_1.salario); 
+	
+// Crear un ejemplo de objeto con los datos de otra persona preguntandp en qué orden queremos mostrar los datos (N si es alfabético nombre, A si es alfabético apellidos y E si es por edad). 
+
+	var persona_2 = new Object (); 
+	//persona_2.nombre = "Rocío"; 
+	//persona_2.apellido_1 = "García"; 
+	//persona_2.apellido_2 = "Martín"; 
+	//persona_2.edad = 22; 
+	persona_2.nombre = prompt ("Dime tu nombre " ); 
+	persona_2.apellido_1 = prompt ("Dime tu primer apellido "); 
+	persona_2.apellido_2 = prompt ("Dime tu segundo apellido "); 
+	persona_2.edad = prompt ("Dime tu edad "); 
+	persona_2.datos = persona_2.nombre + " "+ persona_2.apellido_1 + " "+ persona_2.apellido_2 + " "+ persona_2.edad;
+	//persona_2.salario = prompt ("Dime el salario de " + persona_2.nombre); 
+	//persona_2.salario = parseFloat (persona_1.salario); 
+	//if (persona_2.salario > 0)
+		{
+		//persona_2.tieneTrabajo = true; 
+		}
+	//else 
+		{
+		//persona_2.tieneTrabajo = false; 
+		} 
+	
+	document.write (persona_2.apellido_1 + " " + persona_2.apellido_2 + " " + persona_2.nombre); 
+	document.write ("<br/>");
+	document.write ("Edad:" + persona_1.edad); 
+	document.write ("<br/>"); 
+	//if (persona_2.tieneTrabajo)
+		{
+		//document.write ("<br/> Tiene trabajo"); 
+		}
+	//else 
+		{
+		//document.write ("<br/> No tiene trabajo"); 
+		}
+	//document.write ("<br/> Salario: " + persona_1.salario); 
+	
+	var ordenDatos = prompt ("Dime en qué orden quieres los datos "); 
+	var ordenDatosValido = "NAE";
+	
+	while (ordenDatosValido.indexOf("NAE")!== OrdenDatosValido)
+		{
+		ordenDatos = prompt ("Dime en qué orden quieres los datos "); 
+		}
+	
+	if (ordenDatos == "N" && persona_1.nombre.toUpperCase () > persona_2.nombre.toUpperCase ())
+			{
+			document.write (persona_2.datos); 
+			document.write ("<br/"); 
+			document.write (persona_1.datos); 
+			}
+	else if (ordenDatos == "N" && persona_1.nombre.toLowerCase () > persona_2.nombre.toLowerCase ())
+			{
+			document.write (persona_2.datos); 
+			document.write ("<br/"); 
+			document.write (persona_1.datos); 
+			}
+	else if (ordenDatos == "N" && persona_1.nombre.toUpperCase < persona_2.nombre.toUpperCase)
+			{
+			document.write (persona_1.datos); 
+			document.write ("<br/"); 
+			document.write (persona_2.datos); 
+			}
+	else if (ordenDatos == "N" && persona_1.nombre.LowerCase < persona_2.nombre.toLowerCase)
+			{
+			document.write (persona_1.datos); 
+			document.write ("<br/"); 
+			document.write (persona_2.datos); 
+			}	
+	else if (ordenDatos == "A" && persona_1.apellido_1.toUpperCase > persona_2.apellido_1.toUpperCase)
+			{
+			document.write (persona_2.datos);
+			document.write ("<br/"); 
+			document.write (persona_1.datos); 				
+			}
+	else if (ordenDatos == "A" && persona_1.apellido_1.toLowerCase > persona_2.apellido_1.toLowerCase)
+			{
+			document.write (persona_2.datos);
+			document.write ("<br/"); 
+			document.write (persona_1.datos);
+			}
+	else if (ordenDatos == "A" && persona_1.apellido_1.toUpperCase < persona_2.apellido_1.toUpperCase)
+			{
+			document.write (persona_1.datos);
+			document.write ("<br/"); 
+			document.write (persona_2.datos); 
+			}
+	else if (ordenDatos == "A" && persona_1.apellido_1.toLowerCase < persona_2.apellido_1.toLowerCase)
+			{
+			document.write (persona_1.datos);
+			document.write ("<br/"); 
+			document.write (persona_2.datos); 			
+			}	
+	else if (ordenDatos == "E" && persona_1.edad.toUpperCase > persona_2.edad.toUpperCase )
+			{
+			document.write (persona_2.datos); 
+			document.write ("<br/"); 
+			document.write (persona_1.datos); 
+			}
+	else if (ordenDatos == "E" && persona_1.edad.toLowerCase > persona_2.edad.toLowerCase )
+			{
+			document.write (persona_2.datos); 
+			document.write ("<br/"); 
+			document.write (persona_1.datos);
+			}
+	else if (ordenDatos == "E" && persona_1.edad.toUpperCase < persona_2.edad.toUpperCase)
+			{
+			document.write (persona_1.datos); 
+			document.write ("<br/"); 
+			document.write (persona_2.datos); 
+			}	
+	else if (ordenDatos == "E" && persona_1.edad.toLowerCase < persona_2.edad.toLowerCase)
+			{
+			document.write (persona_1.datos); 
+			document.write ("<br/"); 
+			document.write (persona_2.datos); 
+			}	
+	
+</script>
+	</body>
+</html>
