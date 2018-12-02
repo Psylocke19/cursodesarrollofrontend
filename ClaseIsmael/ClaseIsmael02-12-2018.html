@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head> 
+		<title>Ejemplos variables y operadores</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Ejemplos variables y operadores</h1>
+<script>
+	//Intercambio de variables
+	var aux = num1;
+	num1 = num2;
+	num2 = aux;
+	
+	/*
+		Operadores matemáticos (entre 2 y n operaciones)
+	+ 
+	-
+	* 
+	/
+	%
+
+	3+4*4-2 == (3+ 4*4) -2
+	*/
+	var resto = 3 % 2; //resto será 1
+	/*Operadores:
+		++
+		--
+	*/
+	var algo = 1;
+	algo++;
+	++algo;
+	//aquí algo vale 3
+	algo =1;
+	var res1 = algo++;
+	// res vale 1
+	algo =1;
+	var res2 = ++algo;
+	//res vale 2
+	
+	
+	//Este bucle itera una vuelta más
+	var posicion =0;
+	while(posicion++<8){
+		alert(posicion);
+	}
+	posicion =0;
+	while(++posicion<8){
+		alert(posicion);
+	}
+	
+	
+	var bucle = 0;
+	//Las dos siguientes líneas son equivalentes
+	bucle = bucle +1;
+	bucle += bucle;
+	
+	var vari1 = "3";
+	var vari2 = 3;
+	var vari3 = (vari1 == vari2); //Vari3 es true (son iguales)
+	var vari4 = (vari1 === vari2); //Vari4 no es true (no son iguales porque se compara el tipo)
+	
+	
+	//switch case
+	var edad = prompt("que edad tiene");
+	switch(edad) {
+		case "13":
+			alert("le doy una piruleta");
+			break;
+		case "14":
+			alert("le agito el pelo");
+			break;
+		default:
+			alert("no tiene trece ni 14");
+	}
+	
+	//Operadores booleanos (true y false)
+	
+	var sonIguales = res1 == res2;
+	
+	//bucle for
+	var arr = [0,1,2,3,4,5,6];
+	for(var posicion = 0 ; posicion < arr.length ; posicion++){
+		alert(arr[posicion]);
+	}
+	
+	
+	
+	//Bucles anidados y arrays
+	var arr =  [[00,01,02],
+				[10,11,12],
+				[20,21,22]];
+
+	for(var x = 0 ; x < arr.length ; x++){
+		
+		for(var y = 0 ; y < arr[x].length ; y++ ){
+			alert(arr[x][y]);
+		}
+		
+	}
+	
+	
+	
+	//Potencias (Bucles)
+	 //Ejercicio: teniendo
+	 var numero = prompt("escribe un numero");
+	 var potencia = prompt("escribe un numero mayor que cero");
+	 //Guarda en una variable y muestra por pantalla número elevado a potencia
+	
+</script>
+	</body>
+</html>
