@@ -104,8 +104,31 @@
 	//Potencias (Bucles)
 	 //Ejercicio: teniendo
 	 var numero = prompt("escribe un numero");
-	 var potencia = prompt("escribe un numero mayor que cero");
+	 var potenciaescrita = prompt("escribe un numero mayor que cero");
+	 var potencia = numero; 
+	 var potencia2 = potencia*numero; 
+	 
+	 
+	 while (potenciaescrita >0)
+		{
+		alert (numero); 
+		numero = potencia * numero; 
+		potenciaescrita = potenciaescrita - 1; 
+		}
 	 //Guarda en una variable y muestra por pantalla número elevado a potencia
+	 
+	 //Lo mismo con factoriales
+	 var factorialNumero = prompt ("Escribe el factorial del siguiente número"); 
+	 var numero = factorialNumero; 
+	 var numero2 = numero -1; 
+	 var numero3 = numero2-1; 
+	 
+	 while (numero > 1)
+		{ 
+		numero = numero-1;
+		factorialNumero = factorialNumero*numero
+		alert (factorialNumero);
+		}
 	
 </script>
 	</body>
