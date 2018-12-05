@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head> 
+		<title>Ejemplos variables y operadores</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Ejemplos variables y operadores</h1>
+<script>
+	// Coge una cadena cualquiera y comprueba si es palíndromo. La cadena te llega sin tildes. 
+	//Ana - Es palíndromo
+	//Pedro - No es palíndromo
+	//An a - es palíndromo (los espacios no se deben tener en cuenta)
+	//Someto votemos - es palíndromo
+	//La cadena te la mete el usuario por teclado
+	
+	//(recuerda que puedes llenar un array recorriendo con un for o un while un string con .charAt()
+	//te recomiendo empezar quitando los espacios
+	
+	
+	var cadena = new Array ();	
+	cadena = prompt ("Escribe una palabra o grupo de palabras");  
+	cadena = cadena.replace (" ", ""); 
+	var x = 0; 
+	var y = cadena.length-1;  
+	
+	
+	for (x = 0; x < y; x++)
+		{
+			if (cadena.charAt(x).toLowerCase() == cadena.charAt(y).toLowerCase())
+				{	
+				alert ("son iguales"); 					
+				}
+			else (false)
+				{	
+				alert ("no son iguales"); 	
+				}
+		y--;
+		}
+	if (true)
+		{
+		alert ("Es un palíndromo"); 
+		}
+	else (false)
+		{
+		alert ("Es un palíndromo"); 
+		}
+
+	
+	
+</script>
+	</body>
+</html>
