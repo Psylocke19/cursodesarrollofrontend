@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplos de JavaScript</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Ejemplos de JavaScript </h1>
+<script>
+//https://www.tutorialesprogramacionya.com/javascriptya/index.php?inicio=0
+	//Ejercicio 2
+	document.write ("Nombre: Paula"); 
+	document.write ("<br/> Edad: 25"); 
+	document.write ("<br/>"); 
+	document.write ("<br/>");
+	
+	//Ejercicio 3
+	var nombre = "Luis Pérez García"; 
+	var sueldo = 20000; 
+	document.write (nombre); 
+	document.write ("<br/>"); 
+	document.write (sueldo); 
+	document.write ("<br/>");
+	document.write ("<br/>");
+	
+	//Ejercicio 4
+	var nombre = prompt ("Ingresa tu nombre"); 
+	var email = prompt ("Ingresa tu e-mail"); 
+	document.write (nombre); 
+	document.write ("<br/>");
+	document.write (email); 
+	document.write ("<br/>");
+	document.write ("<br/>");
+	
+	//Ejercicio 5
+		// Apartado 1
+		var lado = prompt ("Ingresa la medida del lado: "); 
+		var perimetro = lado*4
+		document.write (perimetro); 
+		document.write ("<br/>");
+		// Apartado 2
+		var num1 = prompt ("Ingresa el primer valor: "); 
+		var num2 = prompt ("Ingresa el segundo valor: "); 
+		var num3 = prompt ("Ingresa el tercer valor: "); 
+		var num4 = prompt ("Ingresa el cuarto valor: "); 
+		var suma = parseInt (num1) + parseInt (num2); 
+		var producto = parseInt (num3) * parseInt (num4); 
+		document.write (suma); 
+		document.write ("<br/>");
+		document.write (producto); 
+		document.write ("<br/>");
+		//Apartado 3
+		var num1 = prompt ("Ingresa el primer valor: "); 
+		var num2 = prompt ("Ingresa el segundo valor: "); 
+		var num3 = prompt ("Ingresa el tercer valor: "); 
+		var num4 = prompt ("Ingresa el cuarto valor: "); 
+		var suma = parseInt (num1) + parseInt (num2) + parseInt (num3) + parseInt (num4); 
+		var producto = parseInt (num1) * parseInt (num2) * parseInt (num3) * parseInt (num4);
+		document.write (suma); 
+		document.write ("<br/>");
+		document.write (producto); 
+		document.write ("<br/>");
+		//Apartado 4
+		var precio = prompt ("Precio del artículo: "); 
+		var cantidad = prompt ("Cantidad de artículos: "); 
+		var abonar = parseInt (precio) * parseInt (cantidad); 
+		document.write (abonar); 
+		document.write ("<br/>");
+		document.write ("<br/>");
+		
+	// Ejercicio 6
+		// Apartado 1
+		var nota1 = prompt ("Ingresa la primera nota: "); 
+		nota1 = parseInt (nota1); 
+		var nota2 = prompt ("Ingresa la segunda nota: "); 
+		nota2 = parseInt (nota2); 
+		var nota3 = prompt ("Ingresa la tercera nota: "); 
+		nota3 = parseInt (nota3); 
+		var suma = nota1 + nota2 + nota3; 
+		var promedio = suma/3; 
+		
+		if (promedio >= 7)
+			{
+			document.write ("Promocionado"); 
+			}
+		document.write ("<br/>");
+		// Apartado 2
+		var clave1 = prompt ("Ingresa la clave: "); 
+		var clave2 = prompt ("Ingresa de nuevo la clave: "); 
+		
+		if (clave1 == clave2)
+			{
+			document.write ("Clave válida"); 
+			}
+		document.write ("<br/>");
+		document.write ("<br/>");
+		
+	// Ejercicio 7
+		//Apartado 1
+		var num1 = prompt ("Ingresa un número: "); 
+		num1 = parseInt (num1);
+		var num2 = prompt ("Ingresa otro número: "); 
+		num2 = parseInt (num2); 
+		var suma = num1 + num2; 
+		var resta = num1 - num2; 
+		var producto = num1 * num2; 
+		var division = num1 / num2; 
+		
+		if (num1 > num2)
+			{
+			document.write (suma); 
+			document.write ("<br/>");
+			document.write (resta); 
+			}
+		else 
+			{
+			document.write (producto); 
+			document.write ("<br/>");
+			document.write (division); 
+			}
+		document.write ("<br/>");
+		// Apartado 2
+		var nota1 = prompt ("Ingresa tu primera nota: "); 
+		nota1 = parseInt (nota1); 
+		var nota2 = prompt ("Ingresa tu segunda nota: ");
+		nota2 = parseInt (nota2); 
+		var nota3 = prompt ("Ingresa tu tercera nota: ");
+		nota3 = parseInt (nota3); 
+		var suma = nota1 + nota2 + nota3; 
+		var promedio = suma / 3; 
+		
+		if (promedio >= 4)
+			{
+			document.write ("Regular"); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			document.write ("Suspenso"); 
+			}
+		document.write ("<br/>");
+		// Apartado 3
+		var num = prompt ("Ingrese un número de uno o dos dígitos: "); 
+		num = parseInt (num); 
+		
+		if (num < 10)
+			{
+			document.write ("Tiene un dígito"); 
+			}
+		else
+			{
+			document.write ("Tiene dos dígitos"); 
+			}
+		document.write ("<br/>");
+		document.write ("<br/>");
+	
+	// Ejercicio 8
+		// Apartado 1
+		var num1 = prompt ("Ingresa el primer valor: "); 
+		num1 = parseInt (num1); 
+		var num2 = prompt ("Ingresa el segundo valor: "); 
+		num2 = parseInt (num2); 
+		var num3 = prompt ("Ingresa el tercer valor: ");
+		num3 = parseInt (num3); 
+		
+		if (num1 > num2)
+			{
+			if (num1 > num3)
+				{
+				document.write ("El mayor de los tres es: " +num1); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("El mayor de los tres es: " +num3);
+				document.write ("<br/>");				
+				}
+			}
+		else 
+			{
+			if (num2 > num3)
+				{
+				document.write ("El mayor de los tres es: " +num2); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("El mayor de los tres es: " +num3);
+				document.write ("<br/>");				
+				}
+			}
+		// Apartado 2
+		var num = prompt ("Ingresa un número entero: "); 
+		num = parseInt (num); 
+		
+		if (num == 0)
+			{
+			document.write ("Es cero");
+			document.write ("<br/>");	
+			}
+		else 
+			{
+			if (num > 0)
+				{
+				document.write ("Es un número positivo"); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("Es un número negativo"); 
+				document.write ("<br/>");
+				}
+			}
+		// Apartado 3
+		var num = prompt ("Ingresa un número entero positivo de hasta tres cifras: "); 
+		num = parseInt (num); 
+		
+		if (num > 9)
+			{
+			if (num > 99)
+				{
+				document.write ("Tiene tres cifras"); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("Tiene dos cifras"); 
+				document.write ("<br/>");
+				}
+			}
+		else 
+			{
+			document.write ("Tiene una cifra"); 
+			document.write ("<br/>");
+			}
+		// Apartado 4
+		var nombre = prompt ("Nombre del postulante: "); 
+		var preguntas = prompt ("Cantidad de preguntas: "); 
+		preguntas = parseInt (preguntas); 
+		var correctas = prompt ("Cantidad de preguntas correctas: "); 
+		correctas = parseInt (correctas); 
+		var porcentaje = correctas / preguntas * 100
+		
+		if (porcentaje >= 75)
+			{
+			if (porcentaje >= 90)
+				{
+				document.write ("Nivel superior"); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("Nivel medio"); 
+				document.write ("<br/>");
+				}
+			}
+		else 
+			{
+			if (porcentaje < 50)
+				{
+				document.write ("Fuera de nivel"); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("Nivel regular"); 
+				document.write ("<br/>");
+				}
+			}
+		document.write ("<br/>");
+		
+	// Ejercicio 9
+		// Apartado 1
+		var dia = prompt ("Indica el día: "); 
+		dia = parseInt (dia); 
+		var mes = prompt ("Indica el mes: "); 
+		mes = parseInt (mes); 
+		var año = prompt ("Indica el año: "); 
+		año = parseInt (año); 
+		
+		if (dia == 25 && mes == 12)
+			{
+			document.write ("La fecha ingresada corresponde a Navidad"); 
+			document.write ("<br/>");
+			}
+		// Apartado 2
+		var num1 = prompt ("Ingresa el primer valor: "); 
+		num1 = parseInt (num1); 
+		var num2 = prompt ("Ingresa el segundo valor: "); 
+		num2 = parseInt (num2); 
+		var num3 = prompt ("Ingresa el tercer valor: ");
+		num3 = parseInt (num3); 
+		var cuenta = (num1 + num2) * num3; 
+		
+		if (num1 == num2 && num1 == num3)
+			{
+			document.write (cuenta); 
+			document.write ("<br/>");
+			}
+		// Apartado 3
+		var num1 = prompt ("Ingresa el primer valor: "); 
+		num1 = parseInt (num1); 
+		var num2 = prompt ("Ingresa el segundo valor: "); 
+		num2 = parseInt (num2); 
+		var num3 = prompt ("Ingresa el tercer valor: ");
+		num3 = parseInt (num3); 
+		
+		if (num1 < 10 && num2 < 10 && num3 < 10)
+			{
+			document.write ("Todos los números son menores de diez");
+			document.write ("<br/>");
+			}
+		// Apartado 4
+		var x = prompt ("Ingresa el valor de x: "); 
+		x = parseInt (x); 
+		var y = prompt ("Ingresa el valor de y: "); 
+		y = parseInt (y); 
+		
+		if (x > 0 && y > 0)
+			{
+			document.write ("Primer cuadrante"); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			if (x < 0 && y > 0)
+				{
+				document.write ("Segundo cuadrante"); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				if (x > 0 && y < 0)
+					{
+					document.write ("Tercer cuadrante");
+					document.write ("<br/>");
+					}
+				else 
+					{
+					document.write ("Cuarto cuadrante");
+					document.write ("<br/>");
+					}
+				}
+			}
+		// Apartado 5
+		var sueldo = prompt ("Ingrese su sueldo: "); 
+		sueldo = parseInt (sueldo);
+		var antiguedad = prompt ("Ingrese sus años de antigüedad: "); 
+		antiguedad = parseInt (antiguedad); 
+		
+		if (sueldo < 500 && antiguedad >= 10)
+			{
+			sueldo = sueldo * 1.2; 
+			document.write (sueldo); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			if (sueldo < 500 && antiguedad < 10)
+				{
+				sueldo = sueldo * 1.05; 
+				document.write (sueldo);
+				document.write ("<br/>");
+				}
+			else if (sueldo >= 500)
+				{
+				sueldo = sueldo; 
+				document.write (sueldo); 
+				document.write ("<br/>");
+				}
+			}
+		document.write ("<br/>");
+		
+	// Ejercicio 10
+	var num1 = prompt ("Ingresa el primer valor: "); 
+	num1 = parseInt (num1); 
+	var num2 = prompt ("Ingresa el segundo valor: "); 
+	num2 = parseInt (num2); 
+	var num3 = prompt ("Ingresa el tercer valor: ");
+	num3 = parseInt (num3); 
+	
+	if (num1 < 10 || num2 < 10 || num3 < 10)
+		{
+		document.write ("Alguno de los números es menor a diez"); 
+		document.write ("<br/>");
+		}
+	document.write ("<br/>");
+	
+	// Ejercicio 11
+	var palabra = prompt ("Ingrese alguna de estas palabras (casa, mesa, perro, gato): "); 
+	
+	switch (palabra)
+		{
+		case "casa": document.write ("house"); 
+		break; 
+		case "mesa": document.write ("desk"); 
+		break; 
+		case "perro": document.write ("dog"); 
+		break; 
+		case "gato": document.write ("cat");
+		break; 
+		}
+	document.write ("<br/>");
+	document.write ("<br/>");
+	
+	// Ejercicio 12
+		// Apartado 1
+		var serie = 11; 
+		var x = 1; 
+		
+		while (x <= 25)
+			{
+			serie++ 
+			x++
+			document.write (serie); 
+			document.write ("<br/>");
+			}
+		// Apartado 2
+		var numero = 8; 
+		
+		while (numero < 500)
+			{
+			document.write (numero); 
+			numero = numero + 8; 
+			document.write ("<br/>");
+			}
+		document.write ("<br/>");
+		
+	// Ejercicio 13
+		// Apartado 1
+		var x = 0; 
+		var cant1 = 0;		
+		var cant2 = 0; 
+		var nota; 
+	
+		while (x < 11)
+			{
+			nota = prompt ("Inserta tu nota"); 
+			if (nota >= 7)
+				{
+				cant1 = parseInt (cant1); 
+				cant1++
+				}
+			else 
+				{
+				cant2 = parseInt (cant2);
+				cant2++
+				}
+			x++
+			}
+		
+		document.write ("Cantidad de alumnos con notas mayores o iguales a 7: " + cant1); 
+		document.write ("<br/>");
+		document.write ("Cantidad de alumnos con notas menores de 7: " + cant2); 
+		document.write ("<br/>");
+		// Apartado 2
+		var x = 0; 
+		var altura; 
+		var suma = 0; 
+		suma = parseInt (suma); 
+		
+		while (x < 5)
+			{
+			altura = prompt ("Inserte su altura: "); 
+			altura = parseInt (altura); 
+			suma = suma + altura; 
+			x++; 
+			}
+		var promedio = suma / 5; 
+		promedio = parseInt (promedio); 
+		document.write ("La altura promedio de las cinco personas es: " +promedio); 
+		// Apartado 3
+		var x = 0; 
+		var sueldo; 
+		var gastos = 0; 
+		gastos = parseInt (gastos); 
+		var cant1 = 0; 
+		cant1 = parseInt (cant1); 
+		var cant2 = 0; 
+		cant2 = parseInt (cant2); 
+		
+		while (x < 5)
+			{
+			sueldo = prompt ("Ingrese su sueldo: "); 
+			sueldo = parseInt (sueldo); 
+				if (sueldo > 300)
+					{
+					cant1++
+					}
+				else 
+					{
+					cant2++
+					}
+			gastos = gastos + sueldo; 
+			x++; 
+			}
+		document.write ("Importe que hasta la empresa en sueldos: " +gastos);
+		document.write ("<br/>");
+		document.write ("Empleados que cobran menos de 300 euros: " +cant2); 
+		document.write ("<br/>");
+		document.write ("Empleados que cobran más de 300 euros: " +cant1); 
+		document.write ("<br/>");
+		// Apartado 4
+		
+		
+	
+</script>
+	</body>
+</html>
