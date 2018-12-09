@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplos de JavaScript</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Ejemplos de JavaScript </h1>
+<script>
+
+
+	//Imprime pirámide de ceros
+	var x = 0;
+	while(x< 6)
+		{
+		var y = 0;
+		
+		while(y < x)
+			{
+			document.write( "0" ); 
+			y++;    
+			}
+		document.write( "<br>" ); 
+		x++;
+		}
+		/* Lo que imprime :
+				0
+				00
+				000
+				0000
+				00000
+		*/
+	//DEBERES: IMPRIMIR PIRÁMIDE INVERSA
+
+	
+	//Ejemplo de funcion
+	function area(x, y){
+		x = parseInt(x);
+		y = parseInt(y);
+		return x*y;
+	}
+
+	var largo = 100;
+	var ancho = 4;
+
+	var x = area(largo, ancho); //area(100,4)
+
+	alert(x);
+
+
+	//Ejemplo de funcion booleana
+	function esGatoOPerro(texto){
+		return texto == "gato" || texto == "perro";
+	}
+
+	var txt = prompt("Introduce una cadena, si es gato o perro pasarán cosas distintas");
+
+	if(esGatoOPerro(txt)){
+		alert ("gato o perro")
+	}else{
+		alert("Ni gato ni perro");
+	}
+
+	//Funcion que no devuelve nada
+	function piramideDeCeros(tamanio){
+		var x = 0;
+		while(x< tamanio)
+			{
+			var y = 0;
+			
+			while(y < x)
+				{
+				document.write( "0" ); 
+				y++;    
+				}
+			document.write( "<br>" ); 
+			x++;
+			}
+	}
+
+	piramideDeCeros();
+
+
+	//Funcion booleana 2
+	function tienenElMismoTipo(a , b){
+		if(typeof a == typeof b){
+			return true;
+		}
+		return false;    
+		
+	}
+
+	alert(tienenElMismoTipo(3,4));
+	alert(typeof tienenElMismoTipo(3,4));
+
+	if(tienenElMismoTipo(3,"3")){
+		alert("si");
+	}else{
+		alert("no");
+	}
+		
+</script>
+	</body>
+</html>

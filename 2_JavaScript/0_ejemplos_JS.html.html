@@ -439,14 +439,14 @@
 			if (nota >= 7)
 				{
 				cant1 = parseInt (cant1); 
-				cant1++
+				cant1++;
 				}
 			else 
 				{
 				cant2 = parseInt (cant2);
-				cant2++
+				cant2++;
 				}
-			x++
+			x++;
 			}
 		
 		document.write ("Cantidad de alumnos con notas mayores o iguales a 7: " + cant1); 
@@ -501,9 +501,219 @@
 		document.write ("Empleados que cobran más de 300 euros: " +cant1); 
 		document.write ("<br/>");
 		// Apartado 4
+		var inicio = 5; 
+		var x = 0; 
 		
+		while (x < 20)
+			{
+			document.write ("<br/>" +inicio); 
+			inicio = inicio + 5; 
+			x++; 
+			}
+		// Apartado 5
+		var inicio = 10; 
+		x = 0; 
+		
+		while (x < 150)
+			{
+			document.write ("<br/>" + inicio); 
+			inicio = inicio + 10; 
+			x++; 
+			}
+		// Apartado 6
+		var lista1 = 0;  
+		var lista2 = 0;  
+		var valor1; 
+		var valor2; 
+		var suma1 = 0;
+		suma1 = parseInt (suma1); 
+		var suma2 = 0; 	
+		suma2 = parseInt (suma2);  		
+		
+		while (lista1 < 3)
+			{
+			valor1 = prompt ("Introduce un valor: ");
+			valor1 = parseInt (valor1); 
+			suma1 = parseInt (suma1); 
+			suma1 = suma1 + valor1; 
+			lista1++; 
+			}
+		while (lista2 < 3)
+			{
+			valor2 = prompt ("Introduce un valor: "); 
+			valor2 = parseInt (valor2); 
+			suma2 = parseInt (suma2); 
+			suma2 = suma2 + valor2; 
+			lista2++
+			}
+		
+		if (suma1 < suma2)
+			{
+			document.write ("Lista 2 mayor"); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			if (suma1 > suma2)
+				{
+				document.write ("Lista 1 mayor"); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("Listas iguales"); 
+				document.write ("<br/>");
+				}
+			}
+		// Apartado 7
+		var num; 
+		var x = 0; 
+		var pares = 0; 
+		var impares = 0; 
+		
+		while (x < 5)
+			{
+			num = prompt ("Inserta un número entero: "); 
+				if (num % 2 == 0)
+					{
+					pares++; 
+					}
+				else 
+					{
+					impares++; 
+					}
+			x++; 
+			}
+		
+		document.write ("El número de pares es: " + pares); 
+		document.write ("<br/>");
+		document.write ("El número de impares es: " + impares); 
+		document.write ("<br/>");
+			
+	// Ejercicio 14
+		// Apartado 1
+		var num;
+		var suma = 0;
+		suma = parseInt (suma); 		
+		do
+			{
+			num = prompt ("Ingresa un número: "); 
+			num = parseInt (num); 
+				if (num !== 9999)
+					{
+					suma = suma + num; 
+					}
+			}
+		while (num !== 9999)
+			{
+			document.write (suma); 
+			document.write ("<br/>");
+			}
+		
+		if (suma < 0)
+			{
+			document.write ("La suma es menor que 0"); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			if (suma > 0)
+				{
+				document.write ("La suma es mayor que 0"); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("La suma es igual a 0"); 
+				document.write ("<br/>");
+				}
+			}
+		// Apartado 2
+		var num = 0; 
+		var nombre; 
+		var saldo = 0; 
+		var suma = 0; 
+		suma = parseInt (suma); 
+		while (num >= 0)
+			{
+			num = prompt ("Ingresa tu número de cuenta: "); 
+			num = parseInt (num); 
+			nombre = prompt ("Ingresa tu nombre: "); 
+			saldo = prompt ("Ingresa tu saldo: ");
+			saldo = parseInt (saldo); 
+				if (saldo > 0 && num >= 0)
+					{
+					document.write ("Datos cuenta: " +num + 	" " +nombre +" " +"Acreedor"); 
+					suma = suma + saldo; 
+					document.write ("<br/>");
+					}
+				else 
+					{
+					if (saldo < 0 && num >= 0)
+						{
+						document.write ("Datos cuenta: " +num + 	" " +nombre + " "+"Deudor"); 
+						document.write ("<br/>");
+						}
+					else if (saldo == 0 && num >= 0)
+						{
+						document.write ("Datos cuenta: " +num + 	" " +nombre + " "+"Nulo"); 
+						document.write ("<br/>");
+						}
+					}
+			}
+		document.write ("La suma total de los saldos de los acreedores es: " + suma); 
+		// Apartado 3
+		var num = 1; 
+		var edad; 
+		var sexo; 
+		var mujeres = 0; 
+		mujeres = parseInt (mujeres)
+		var hombres = 0; 
+		hombres = parseInt (hombres)
+		var hombresadultos = 0, 
+		hombresadultos = parseInt (hombresadultos); 
+		var total = 0; 
+		total = parseInt (total); 
+		
+		while (num > 0) 
+			{
+			num = prompt ("Ingrese el número de documento"); 
+			num = parseInt (num); 
+			edad = prompt ("Ingrese su edad"); 
+			edad = parseInt (edad); 
+			sexo = prompt ("Ingrese su sexo: Femenino o Masculino"); 
+			if (num > 0)
+				{
+				total++
+				if (sexo == "Femenino")
+					{
+					mujeres++; 
+					}
+				else
+					{
+					hombres++; 
+						if (edad > 15 && edad < 66)
+						{
+						hombresadultos++; 
+						}
+					}
+				}
+			}
+		
+		document.write ("La cantidad total de personas censadas es de :" +total); 
+		document.write ("<br/>");
+		document.write ("El número de mujeres es de: " +mujeres);
+		document.write ("<br/>");		
+		document.write ("El número de hombres es de: " +hombres); 
+		document.write ("<br/>");
+		document.write ("La cantidad de varones cuya edad varía entre 16 y 65 años es de: " +hombresadultos); 
+		document.write ("<br/>");
+		
+	// Ejercicio 15
+		// Apartado 1
 		
 	
+		
 </script>
 	</body>
 </html>
