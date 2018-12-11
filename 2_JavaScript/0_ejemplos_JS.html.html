@@ -711,6 +711,36 @@
 		
 	// Ejercicio 15
 		// Apartado 1
+		var base = 0;
+		base = parseInt (base);
+		var altura = 0; 
+		altura = parseInt (altura); 
+		var superficie;
+		superficie = parseInt (superficie); 
+		var x;
+		var cont = 0; 
+		
+		for (x = 1; x <= 3; x++)
+			{
+			base = prompt ("Introduce la base del triángulo");
+			base = parseInt (base); 
+			altura = prompt ("Introduce la altura del triángulo"); 
+			altura = parseInt (altura);
+			superficie = base * altura / 2; 
+			superficie = parseInt (superficie);
+				if (superficie > 12)
+					{
+					cont++; 
+					}
+			document.write (base); 
+			document.write ("<br/>");
+			document.write (altura);
+			document.write ("<br/>");
+			document.write (superficie);
+			document.write ("<br/>");
+			}
+	document.write (cont);
+		
 		
 	
 		
