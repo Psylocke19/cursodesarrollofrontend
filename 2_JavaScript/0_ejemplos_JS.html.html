@@ -732,14 +732,208 @@
 					{
 					cont++; 
 					}
-			document.write (base); 
+			document.write ("La base del triángulo es: " + base); 
 			document.write ("<br/>");
-			document.write (altura);
+			document.write ("La altura del triángulo es: " + altura);
 			document.write ("<br/>");
-			document.write (superficie);
+			document.write ("La superficie del triángulo es: " + superficie);
 			document.write ("<br/>");
 			}
-	document.write (cont);
+		document.write ("El número de triángulos con una superficie mayor de 12 es de: " + cont);
+		//Apartado 2
+		var num = 0; 
+		var suma = 0; 
+		var x; 
+		
+		for (x = 1; x <= 10; x++)
+			{
+			num = prompt ("Ingresa un número"); 
+			num = parseInt (num); 
+				if (x > 5)
+					{
+					suma = num + suma; 
+					suma = parseInt (suma); 
+					}
+			}
+		document.write ("La suma de los 5 últimos valores ingresados es de: "+ suma); 
+		// Apartado 3
+		var tabla5 = 0;  
+		var x; 
+		
+		for (x =1; x <= 10; x++)
+			{
+			tabla5 = tabla5 + 5; 
+			document.write (tabla5);
+			document.write ("<br/>");
+			}
+		// Apartado 4
+		var num
+		var numSumado = 0; 
+		numSumado = parseInt (numSumado); 
+		var tabla; 
+		var x; 
+		
+		num = prompt ("Ingresa un número del 1 al 10: "); 
+		num = parseInt (num); 
+		for (x = 1; x <= 12; x++)
+			{
+			numSumado = numSumado + num; 
+			document.write (numSumado); 
+			document.write ("<br/>"); 
+			}
+		// Apartado 5
+		var lado1;
+		var lado2;
+		var lado3; 
+		var cont1 = 0; 
+		var cont2 = 0;
+		var cont3 = 0; 
+		var x; 
+		
+		for (x = 1; x <= 4; x++)
+			{
+			lado1 = prompt ("Ingresa el valor del primer lado: "); 
+			lado1 = parseInt (lado1); 
+			lado2 = prompt ("Ingresa el valor del segundo lado: "); 
+			lado2 = parseInt (lado2); 
+			lado3 = prompt ("Ingresa el valor del tercer lado: "); 
+			lado3 = parseInt (lado3); 
+				if (lado1 == lado2 && lado1 == lado3)
+					{
+					document.write ("Es un triángulo equilátero"); 
+					document.write ("<br/>"); 
+					cont1++
+					}
+				else 
+					{
+					if (lado1 !== lado2 && lado1 !== lado3)
+						{
+						document.write ("Es un triángulo escaleno"); 
+						document.write ("<br/>"); 
+						cont2++
+						}
+					else 
+						{
+						document.write ("Es un triángulo isósceles");
+						document.write ("<br/>"); 
+						cont3++						
+						}
+					
+					}
+			}
+		document.write ("La cantidad de triángulos equiláteros es de: " + cont1);
+		document.write ("<br/>"); 
+		document.write ("La cantidad de triángulos escalenos es de: " + cont2); 
+		document.write ("<br/>"); 
+		document.write ("La cantidad de triángulos isósceles es de: " + cont3); 
+		document.write ("<br/>"); 
+		if (cont1 < cont2 && cont1 < cont3)
+			{
+			document.write ("Hay menos triángulos equiláteros"); 
+			document.write ("<br/>"); 
+			}
+		else
+			{
+			if (cont2 < cont1 && cont2 < cont3)
+				{
+				document.write ("Hay menos triángulos escalenos");
+				document.write ("<br/>"); 				
+				}
+			else 
+				{
+				document.write ("Hay menos triángulos isósceles"); 
+				document.write ("<br/>"); 
+				}
+			}
+		// Apartado 6
+		var puntos; 
+		var x; 
+		var y; 
+		var f; 
+		var cont1 = 0;
+		var cont2 = 0;
+		var cont3 = 0;
+		var cont4 = 0; 
+		
+		puntos = prompt ("Ingresa cuántos puntos quieres procesar: "); 
+		puntos = parseInt (puntos); 
+		
+		for (f = 1; f <= puntos; f++)
+			{
+			x = prompt ("Ingresa la coordenada de las x: "); 
+			x = parseInt (x); 
+			y = prompt ("Ingresa la coordenada de las y: "); 
+			y = parseInt (y); 
+				if (x > 0 && y > 0)
+					{
+					cont1++; 
+					}
+				else
+					{
+					if (x > 0 && y < 0)
+						{
+						cont4++; 
+						}
+					else if (x < 0 && y < 0)
+						{
+						cont3++
+						}
+					else if (x < 0 && y > 0)
+						{
+						cont2++
+						}
+					}
+			}
+		document.write ("La cantidad de puntos ingresados en el primer cuadrante es de: " + cont1); 
+		document.write ("<br/>"); 
+		document.write ("La cantidad de puntos ingresados en el segundo cuadrante es de: " + cont2); 
+		document.write ("<br/>"); 
+		document.write ("La cantidad de puntos ingresados en el tercer cuadrante es de: " + cont3); 
+		document.write ("<br/>"); 
+		document.write ("La cantidad de puntos ingresados en el cuarto cuadrante es de: " + cont4); 
+		document.write ("<br/>"); 
+		// Apartado 7
+		var valor; 
+		var contNegativo = 0; 
+		contNegativo = parseInt (contNegativo); 
+		var contPositivo = 0; 
+		contPositivo = parseInt (contPositivo); 
+		var contMult = 0; 
+		contMult = parseInt (contMult); 
+		var contPares = 0; 
+		contPares = parseInt (contPares); 
+		var x; 
+		
+		for (x = 1; x <= 10; x++)
+			{
+			valor = prompt ("Ingrese un valor: "); 
+			valor = parseInt (valor);
+				if (valor < 0)
+					{
+					contNegativo++; 
+					}
+				else if (valor > 0)
+					{
+					contPositivo++; 
+					}
+				if (valor % 15 == 0 && valor != 0)
+					{
+					contMult++; 
+					}
+				if (valor % 2 == 0)
+					{
+					contPares = valor + contPares; 
+					}
+			}
+		document.write ("El número de valores negativos es: " + contNegativo); 
+		document.write ("<br/>"); 
+		document.write ("El número de valores positivos es: " + contPositivo); 
+		document.write ("<br/>"); 
+		document.write ("La cantidad de múltiplos de 15 es de: " + contMult); 
+		document.write ("<br/>"); 
+		document.write ("El valor acumulado de los números ingresados que son pares es de: " +contPares); 
+		
+		
 		
 		
 	
