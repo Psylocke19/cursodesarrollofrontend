@@ -932,8 +932,64 @@
 		document.write ("La cantidad de múltiplos de 15 es de: " + contMult); 
 		document.write ("<br/>"); 
 		document.write ("El valor acumulado de los números ingresados que son pares es de: " +contPares); 
+		// Apartado 8
+		var edad;
+		var x; 
+		var cont1 = 0; 
+		var cont2 = 0; 
+		var cont3 = 0; 
+		var promedio1 = 0; 
+		var promedio2 = 0; 
+		var promedio3 = 0; 
 		
+		for (x = 1; x <= 5; x++)
+			{
+			edad = prompt ("Ingresa la edad del estudiante: "); 
+			edad = parseInt (edad); 
+			cont1 = edad + cont1; 
+			}
+		promedio1 = cont1 / 5; 
+		document.write ("El promedio de edad en el turno de mañana es de: " + promedio1); 
+		document.write ("<br/>"); 
 		
+		for (x = 1; x <= 6; x++)
+			{
+			edad = prompt ("Ingresa la edad del estudiante: "); 
+			edad = parseInt (edad); 
+			cont2 = edad + cont2; 
+			}
+		promedio2 = cont2 / 6; 
+		document.write ("El promedio de edad en el turno de tarde es de: " + promedio2); 
+		document.write ("<br/>");
+		
+		for (x = 1; x <= 11; x++)
+			{
+			edad = prompt ("Ingresa la edad del estudiante: "); 
+			edad = parseInt (edad); 
+			cont3 = edad + cont3; 
+			}
+		promedio3 = cont3 / 11; 
+		document.write ("El promedio de edad en el turno de noche es de: " + promedio3); 
+		document.write ("<br/>");
+		
+		if (promedio1 > promedio2 && promedio1 > promedio3)
+			{
+			document.write ("El turno de mañana es el que tiene un promedio mayor"); 
+			document.write ("<br/>");
+			}
+		else if (promedio3 > promedio2 && promedio1 < promedio3)
+				{
+				document.write ("El turno de noche es el que tiene un promedio mayor"); 
+				document.write ("<br/>");
+				}
+		else if (promedio1 < promedio2 && promedio2 > promedio3)
+				{
+				document.write ("El turno de tarde es el que tiene un promedio mayor"); 
+				document.write ("<br/>");
+				}
+				
+	// Ejercicio 17
+	
 		
 		
 	
