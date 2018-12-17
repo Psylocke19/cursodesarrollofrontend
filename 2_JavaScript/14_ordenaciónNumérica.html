@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Variables e instrucciones</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Variables e instrucciones </h1>
+<script>	
+	var vectorInicial = [4, 2, 8, 3,];  
+	var vectorFinal; 
+	vectorFinal = new Array; 
+	var x; 
+	var masPequeño; 
+	var segundoMasPequeño; 
+	var tercerMasPequeño;
+	var cuartoMasPequeño; 
+	var posMenor; 
+	
+	for (x = 0; x < vectorInicial.length; x++)
+		{
+			if (vectorInicial [1] < vectorInicial [0])
+				{
+				masPequeño = vectorInicial [1];
+				posMenor = x; 			
+				if (vectorInicial [2] < masPequeño)
+					{
+					masPequeño = vectorInicial [2]; 
+					posMenor = x; 
+					if (vectorInicial [3] < masPequeño); 
+						{
+						masPequeño = vectorInicial [3]; 
+						posMenor = x; 
+						}
+					}
+				}
+			else
+				{
+				masPequeño = vectorInicial [0]; 
+				posMenor = x; 
+				if (vectorInicial [2] < masPequeño)
+					{
+					masPequeño = vectorInicial [2];
+					posMenor = x; 					
+					if (vectorInicial [3] < masPequeño); 
+						{
+						masPequeño = vectorInicial [3]; 
+						posMenor = x; 
+						}
+					}
+				}			
+				
+		}
+		vectorFinal [0] = masPequeño;
+		document.write (vectorFinal [0]); 
+		
+	for (x = 1; x < vectorInicial.length; x++)
+		{
+		if (posMenor != x)
+		{
+			if (vectorInicial [2] < vectorInicial [1])
+				{
+				segundoMasPequeño = vectorInicial [2]; 
+				if (vectorInicial [3] < masPequeño)
+					{
+					segundoMasPequeño = vectorInicial [3]; 
+					}
+				} 
+		}
+		}
+		vectorInicial [1] = segundoMasPequeño; 
+		vectorFinal [1]	= segundoMasPequeño; 
+		document.write (vectorFinal [1]); 
+	
+	for (x = 2; x < vectorInicial.length; x++)
+		{
+			if (vectorInicial [3] < vectorInicial [2])
+				{
+				tercerMasPequeño = vectorInicial [3]; 
+				} 
+		}
+		vectorInicial [2] = tercerMasPequeño; 
+		vectorFinal [2]	= tercerMasPequeño; 
+		document.write (vectorFinal [2]); 
+		vectorFinal [3] = vectorInicial [3]; 
+		document.write (vectorFinal [3]); 
+		
+		
+	
+	
+	
+
+		
+</script>
+	</body>
+</html>

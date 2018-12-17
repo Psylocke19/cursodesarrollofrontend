@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplos de JavaScript</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Ejemplos de JavaScript </h1>
+<script>
+//https://www.tutorialesprogramacionya.com/javascriptya/index.php?inicio=0		
+	// Ejercicio 21
+		// Apartado 1
+		var vector; 
+		vector = new Array (8);
+		var valor; 	
+		var x; 
+	
+		var suma = 0; 
+		var sumaMayor = 0;
+		var cont = 0; 	
+		
+		for (x = 0; x < vector.length; x++)
+			{
+			valor = prompt ("Ingrese el elemento: "); 
+			valor = parseInt (valor); 
+			suma = suma + valor; 
+			if (valor > 36)
+				{
+				sumaMayor = sumaMayor + valor; 
+					if (valor > 50)
+						{
+						cont++; 
+						}
+				}
+			}
+		document.write ("El valor acumulado de los componentes es: " + suma); 
+		document.write ("<br/>");
+		document.write ("El valor acumulado de los componentes mayores de 36 es: " + sumaMayor);
+		document.write ("<br/>");
+		document.write ("La cantidad de valores mayores de 50 es de: " + cont); 
+		// Apartado 2
+		var vector1; 
+		var vector2; 
+		var vectorSuma; 
+		vector1 = new Array (5); 
+		vector2 = new Array (5);
+		vectorSuma = new Array (5); 		
+		var x; 
+		var valor1; 
+		var valor2;	
+		var valorSumado = 0; 
+		var suma1 = 0; 
+		var suma2 = 0; 
+		
+		for (x = 0; x < vectorSuma.length; x++)
+			{
+			valor1 = prompt ("Ingrese los valores del primer vector"); 
+			valor1 = parseInt (valor1); 
+			valor2 = prompt ("Ingrese los valores del segundo vector"); 
+			valor2 = parseInt (valor2); 
+			
+			valorSumado = valor1 + valor2; 
+			document.write (valorSumado + " "); 		
+			}
+	
+	// Ejercicio 22
+	
+		
+	
+		
+		
+	
+		
+</script>
+	</body>
+</html>

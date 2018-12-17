@@ -1,0 +1,132 @@
+Toma de requisitos
+
+Preguntas del desarrollador:
+		- ¿Qué quieres transmitir?
+	
+	Mis conocimientos, habilidades y capacidades. 
+	
+		- ¿Qué tipo de profesional eres?
+	
+	Futuro desarrollador Front-end en búsqueda activa de empleo.
+	
+		- ¿ "   "         "    quieres transmitir que eres? 
+		
+	Por medio de la exposición y presentación de mis trabajos.
+	
+	
+		- ¿Qué emoción quieres que sienta el visititante a tu página?
+		
+	Interés, curiosidad. 	
+		
+		- ¿Qué estética quiere o como se la imagina?
+		
+	Estética formal y sobria, pero a la vez con un toque original que permita distinguirla de otras. 	
+		
+		- ¿Quién es tu público objetivo?
+	
+	Empresas captadoras. 
+	
+		- ¿Va a necesitar mantemiento, actualizaciones o evolutivos?
+	
+	Sí, tiene que estar actualizado en relación a mis nuevos proyectos. 
+	
+		- Qué nivel de estructuración a nivel técnico.
+		
+	Código flexible que permita renovar constantemente la web sin necesidades de desestructurar la misma. 	
+		
+		- ¿Qué clase de interfaz? (intuitivo, complejo..)
+	
+	Intuitiva, que pueda manejarse en ella todo el mundo. 
+	
+		- ¿Como quieres categorizar la información?
+		
+	Presentación de mi persona, currículum, proyectos anteriores. 
+		
+		- ¿Qué tipo de información quieres mostrar?
+		
+	Fundamentalmente de índole profesional (conocimientos técnicos y habilidades)
+		
+		- ¿Qué es lo primero que quieres mostrar?
+	
+	Una breve introducción sobre mí y mi trayectoria profesional. 
+		
+		- ¿Quieres vincularla a RRSS u otras webs?
+		
+	Sí (Linkedin, GitHub, etc).
+		
+		
+		- ¿Cual es el objetivo? (beneficios economicos, darse a conocer, crear comunidad...)
+		
+	Darse a conocer. 
+		
+		- ¿Donde ve las dificultades de cómo comunicar y organizar en caso de tener un portofolio heterógeneo?
+		
+	Separar por una parte la rama de desarrollo web y por otra la rama de profesional de la biología. 
+		
+		- ¿Qué tienes para mostrar? ¿o qué trabajos quieres  mostrar? ¿En qué sector quieres trabajar?
+		
+	Tengo para mostrar trabajos relacionados con el ámbito de la biología y pequeños proyectos durante mi educación en el desarrollo front-end. 
+	Quiero trabajar en el sector del desarrollo web. 
+		
+		- ¿Qué formatos quieres mostrar esos trabajos?
+			- Imágenes, videos, texto, audio...
+	
+	Texto, imágenes y vídeo, a poder ser. 
+		
+		
+		- ¿Tienes los recursos o hay que crearlos?
+	
+	Tengo algunos, habría que crear otros más específicos. 
+		
+		
+		- ¿Alguna presentación animada? Detalles extra
+		
+	Quizá alguna para mostrar mi formación a modo de árbol genealógico. 
+		
+		
+		- ¿Quieres que sea resposive?
+		- Móvil, tablet, PC...
+		
+	Sí, al menos para móvil. 	
+		
+		- ¿Idiomas?
+	
+	Castellano e inglés. 
+	
+
+		- ¿Cual es tu lugar de actuación?
+	Ciudad, pais, continente...
+		
+		- ¿Qué tecnologías conoces?
+		
+	Madrid. 
+		
+		- Frameworks, lenguajes de prog, IDEs, programas...
+		
+	Utilización de las tecnologías estudiadas en el curso. 
+		
+		- ¿Queremos incluir el curriculum?
+
+	Sí. 
+	
+		- Clientes anteriores
+	
+	NS/NC
+	
+		- Trabajos anteriores
+		
+	Sí, aunque no estén relacionados con este campo. 
+		
+		- ¿Para cuándo la quieres?
+		
+	Para dentro de tres meses. 
+		
+		- ¿Presupuesto que tiene?
+		
+	NS/NC
+	
+Preguntas del cliente o lo que necesita el desarrolador:
+	- ¿Tiene preferencia por alguna tecnología?
+	
+	JS, HTML,CSS, etc. 
+	
