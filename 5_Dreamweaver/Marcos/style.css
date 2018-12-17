@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+.trayectoria
+	{
+	position: fixed; 
+	width: 10px; 
+	height: 10px; 
+	background-color: red; 
+	left: 0px;
+	top: 45%; 
+	}
+.proyectil
+	{
+	position: absolute; 
+	width: 150px; 
+	height: 150px; 
+	transform:rotate(50deg) 
+	background-color: white; 
+	animation: vueltas;  
+	animation-duration: 2s; 
+	animation-iteration-count: infinite; 
+	background-image: url("images/cohete.png"); 
+	background-size: cover; 
+	}
+	
+@keyframes vueltas {	
+	0% 
+		{
+		transform:rotate(0deg) translateX(0px);		
+		}
+	50%
+		{ 
+		transform:rotate(400deg) translateX(500px);		
+		}
+	100%
+		{  
+		transform:rotate(0deg) translateX(1000px);
+		}
+}
+
+/* .marco 
+	{
+		width: 400px; 
+		height: 400px; 
+		margin: auto;
+		position: relative; 
+		background-color: white; 
+		border-bottom: medium; 		
+	} */
+
+/* .circulo
+	{
+		position: absolute; 
+		left: 0px; 
+		
+		border-color: red; 
+		height: 400px; 
+		width: 400px; 
+		border-bottom-width: 3px; 
+		border-radius: 100%; 
+		border-style: solid; 
+		
+		animation-name: vueltas; 
+		animation-duration: 3s; 
+		animation-iteration-count: infinite; 
+	} */
+	
+/* .posicionPelota
+	{
+	position:absolute; 
+	left: 50%; 	
+	} */
+
+/* .pelota
+	{
+	position: absolute; 
+	left: 0px; 
+	width: 200px; 
+	height: 200px; 
+	border-radius: 100%; 
+	background-color: blue; 
+	box-shadow: 30px, -40px, 140px rgba (0,0,0,0,7) inset; 
+	animation-name: bote; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite; 
+	} */
+	
+/* /* @keyframes bote */
+	/* {
+	0%
+		{
+		bottom: 300px; 
+		width: 250px; 
+		height: 150px; 
+		}
+	25%
+		{
+		bottom: 300px; 
+		width: 150px; 
+		height: 250px; 
+		}
+	50%
+		{
+		bottom: 0px; 
+		width: 250px; 
+		height: 150px; 
+		}
+	75%
+		{
+		bottom: 300px; 
+		width: 150px; 
+		height: 250px;
+		}
+	100%
+		{
+		bottom: 300px; 
+		width: 250px; 
+		height: 150px; 
+		}
+	} */
+
+/* @keyframes vueltas */
+/* 	{	
+	0% 
+		{
+		width: 400px;
+		left: 0px; 
+		}
+	50% 
+		{
+		width: 0px; 
+		left: 200px; 
+		}
+	100%
+		{
+		width: 400px; 
+		left: 0px; 
+		{
+	}
+	 */
+
+	
+
+

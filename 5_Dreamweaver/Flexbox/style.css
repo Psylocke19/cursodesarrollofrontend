@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header 
+	{
+	background-color: black; 
+	height: 4em; 
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-around; 
+	}
+	
+.botonBanner
+	{
+	background-color: #84C1EF; 
+	padding: 10px 30px 10px 10px; 
+	margin: 10px; 
+	flex-grow: 0; 
+	}
+
+.contenedorFlex 
+	{
+	min-height: 10em;
+	width: 75%;
+	background-color: grey;
+	margin:auto;
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	}
+	
+.cajaFlex 
+	{
+	width: 8em;
+	min-height: 8em;
+	background-color: darkgrey;
+	margin: 5px;
+	border-radius: 10px;
+	line-height: 8em;
+	font-size: 2em;
+	text-align: center;
+	display: flex; 
+	flex-direction: column; 
+	}
+
+.espacio-100
+	{
+	width: 90%;
+	flex-grow: 1; 
+	}
+
+.espacio-33
+	{
+	width: 30%;
+	flex-grow: 1; 
+	}
+
+.espacio-25
+	{
+	width: 22%;
+	flex-grow: 1;
+	
+	}
+	
+.espacio-75
+	{
+	width: 72%; 
+	flex-grow: 1;
+	}
+
+.subContenedor
+	{
+		margin: 5px; 
+		background-color: aqua; 
+		width: 98%; 
+		height: 5em; 
+		flex-grow: 1; 
+	}
+
+body 
+	{
+	background-color: dimgrey;
+	margin:0;
+	}
+	
+
