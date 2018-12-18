@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Crea una función que:
+        // 1. Muestre 6 cabeceras del h1 al h6 con título que se pase por parámetro (mediante un bucle).
+        // 2. Otra reciba 3 parámetros:
+            // - Los dos primeros son los operandos, el 3º el operador (suma "+", resta "-", multipl "*", div "/") y que muestre el resultado (dentro de la función)
+    // Una función que eleve al cubo un número. Comprobar que funciona con 3 (27) y con 4 (64).  
+
+    function dateCabecera (texto, nivel)
+        {
+        var nivel; 
+		var texto = "Título"; 
+        for (nivel = 1; nivel < 7; nivel++)
+            {
+            var abreH = "<h" + nivel + ">"; 
+            var cierraH = "</h" + nivel + ">"; 
+			document.write (abreH + texto + cierraH); 
+            }
+        }
+    
+   dateCabecera (); 
+  
+
+    function operarNumeros (num1, num2, operador)
+        {
+        var num1; 
+        num1 = prompt ("Ingresa el primer número"); 
+        num1 = parseInt (num1);  
+        var num2; 
+        num2 = prompt ("Ingresa el segundo número"); 
+        num2 = parseInt (num2);   
+        var operador; 
+        operador = prompt ("Ingresa el operador"); 
+        var operacionNumeros; 
+            if (operador == "+")
+                {
+                operacionNumeros = num1 + num2; 
+                }
+            else if (operador == "-")
+                {
+                 operacionNumeros = num1 - num2; 
+                }
+            else if (operador == "*")
+                {
+                operacionNumeros = num1 * num2; 
+                }
+            else if (operador == "/")
+                {
+                operacionNumeros = num1 / num2;   
+                } 
+        document.write (operacionNumeros);
+        document.write ("</br>"); 
+        }
+
+    operarNumeros ();
+
+    function elevarCubo (num)
+        {
+        var num; 
+        num = prompt ("Ingresa un número: "); 
+        num = parseInt (num); 
+        var operacionCubo; 
+        operacionCubo = num * num * num; 
+        document.write (operacionCubo); 
+        }
+    
+    elevarCubo (); 
+
+    // Crea las mismas funciones pero usando:
+        // 1. En la 1, con un array que tenga los valores
+            // var cabeceras = ["h1", "h2", "h3", ... "h6"]
+        // 2. En la 2, dos funciones que hagan lo mismo pero:
+            // Una usando la función eval (), que ejecuta un texto como si fuera código JS
+            // dos usando sólo el operador ternario (sin if ())
+        // 3. Una función que eleve a la X potencia (segundo parámetro) mediante un bucle
+
+        function dateCabecera (texto, cabeceras)
+        {
+        var cabeceras = ["h1", "h2", "h3", "h4", "h5", "h6"]; 
+        var x; 
+		var texto = "Título"; 
+        for (x = 1; x < cabeceras.length; x++)
+            {
+			document.write ("<h" + x + ">" + texto + "</h" + x + ">"); 
+            }
+        }
+
+   dateCabecera (); 
+  
+    
+    function elevarXPotencia (num, potencia)
+        {
+        var num; 
+        num = prompt ("Ingresa el número que quieres elevar: "); 
+        num = parseInt (num); 
+        var potencia; 
+        potencia = prompt ("Ingresa la potencia a la que quieres elevar el número"); 
+        potencia = parseInt (potencia); 
+        var x; 
+        
+        for (x = 0; x < potencia; x++)
+            {
+            var operacion; 
+            operacion = num * num;     
+            }
+        }
+
+    document.write (elevarXPotencia ()); 
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Variables e instrucciones</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Variables e instrucciones </h1>
+<script>	
+	var vectorInicial = [4, 2, 8, 3,];   
+	var x; 
+	var y; 
+	var masPequeño; 
+	var posMenor; 
+	var aux; 
+	
+	for (x = 0; x < vectorInicial.length; x++)
+		{
+		for (y = x; y < vectorInicial.length; y++)
+			{
+			if (vectorInicial [y] < vectorInicial [y-1])
+				{
+				masPequeño = vectorInicial [y];
+				posMenor = y; 			
+				}
+			else
+				{
+				masPequeño = vectorInicial [y-1]; 
+				posMenor = y-1; 
+				}
+			}
+		aux = vectorInicial [x]; 
+		vectorInicial [x] = vectorInicial [posMenor]; 
+		vectorInicial [posMenor] = aux; 
+		document.write (vectorInicial); 
+		document.write ("</br>"); 
+		}
+		
+		
+	
+
+		
+</script>
+	</body>
+</html>

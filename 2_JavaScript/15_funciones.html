@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Función básica: ni recibe ni devuelve
+    function mostrarTitulo ()
+        {
+        document.write ("<h2>Subtítulo de la página</h2>"); 
+        document.write ("<br/>"); 
+        }
+    
+    mostrarTitulo (); // Invocar a la función
+
+    // Función que recibe datos
+    function calculaDescuento (precio, descuento)
+        {
+        var precioConDesc; 
+        precioConDesc = precio - precio * descuento / 100; 
+        document.write ("Precio: " + precio + ", descuento: " + descuento + " , total: " + precioConDesc + "<br/>"); 
+        }
+    
+    calculaDescuento (100, 15); 
+    calculaDescuento (200, 20);
+    var otroPrecio = 300; 
+    var otroDescuento = 10; 
+    calculaDescuento (otroPrecio, 5);
+    calculaDescuento (otroPrecio, otroDescuento); 
+
+    // Funciones que devuelven un valor
+    function dameTitulo ()
+        {
+        return "Título funciones con retorno"; 
+        }
+    
+    document.write ("<h1>" + dameTitulo () + "</h1>"); 
+    document.write ("<h2>" + dameTitulo () + "</h2>"); 
+    var tituloWeb = "<h3>" + dameTitulo () + "</h3>"; 
+    document.write (tituloWeb); 
+
+    function dateCabecera (texto, nivel) // Nivel = h1, h2, etc
+        {
+        var abreH = "<h" + nivel + ">"; 
+        var cierraH = "</h" + nivel + ">"; 
+        return abreH + texto + cierraH; 
+        }
+    
+    document.write (dateCabecera ("Cabecera nivel 1", 1)); 
+    document.write (dateCabecera ("Cabecera de nivel 2", 2)); 
+    document.write (dateCabecera ("Cabecera nivel 3", 3)); 
+</script> 
+</body>
+</html>
