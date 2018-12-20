@@ -989,8 +989,245 @@
 				}
 				
 	// Ejercicio 17
-	
+		// Apartado 1
+		function mostrarMenor (num1, num2, num3)
+		{
+		if (num1 < num2 && num1 < num3)
+			{
+			document.write ("El menor de los tres valores es: " +num1); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			if (num2 < num3)
+				{
+				document.write ("El menor de los tres valores es: " +num2); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("El menor de los tres valores es: " +num3); 
+				document.write ("<br/>");
+				}
+			}
+		}	
+			
+		var num1;
+		num1 = prompt ("Ingrese el primer valor"); 
+		num1 = parseInt (num1); 
+		var num2; 
+		num2 = prompt ("Ingrese el segundo valor"); 
+		num2 = parseInt (num2); 
+		var num3; 
+		num3 = prompt ("Ingrese el tercer valor"); 
+		num3 = parseInt (num3); 
 		
+		mostrarMenor (num1, num2, num3);  
+		// Apartado 2
+		function numOrdenados (num1, num2, num3)
+			{
+			if (num1 < num2 && num1 < num3)
+				{
+				document.write (num1 + " "); 
+				if (num2 < num3)
+					{
+					document.write (num2 + " " + num3); 
+					}
+				else 
+					{
+					document.write (num3 + " " + num2); 
+					}
+				}
+			else if  (num2 < num3 && num2 < num3)
+				{
+				document.write (num2 + " "); 
+				if (num1 < num3)
+					{
+					document.write (num1 + " " + num3); 
+					}
+				else 
+					{
+					document.write (num3 + " " + num1);
+					}
+				}
+			else if (num3 < num1 && num3 < num2)
+				{
+				document.write (num3 + " "); 
+				if (num1 < num2)
+					{
+					document.write (num1 + " " + num2); 
+					}
+				else 
+					{
+					document.write (num2 + " " + num1);
+					}
+				}
+			}
+		
+		var num1;
+		num1 = prompt ("Ingrese el primer valor"); 
+		num1 = parseInt (num1); 
+		var num2; 
+		num2 = prompt ("Ingrese el segundo valor"); 
+		num2 = parseInt (num2); 
+		var num3; 
+		num3 = prompt ("Ingrese el tercer valor"); 
+		num3 = parseInt (num3); 
+		
+		numOrdenados (num1, num2, num3)
+		
+	// Ejercicio 18
+		// Apartado 1
+		function mostrarMayor (num1, num2, num3)
+		{
+		if (num1 > num2 && num1 > num3)
+			{
+			document.write ("El mayor de los tres valores es: " +num1); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			if (num2 > num3)
+				{
+				document.write ("El mayor de los tres valores es: " +num2); 
+				document.write ("<br/>");
+				}
+			else 
+				{
+				document.write ("El mayor de los tres valores es: " +num3); 
+				document.write ("<br/>");
+				}
+			}
+		}	
+			
+		var num1;
+		num1 = prompt ("Ingrese el primer valor"); 
+		num1 = parseInt (num1); 
+		var num2; 
+		num2 = prompt ("Ingrese el segundo valor"); 
+		num2 = parseInt (num2); 
+		var num3; 
+		num3 = prompt ("Ingrese el tercer valor"); 
+		num3 = parseInt (num3); 
+		
+		mostrarMayor (num1, num2, num3); 
+		// Apartado 2
+		function perimetro (lado)
+			{
+			var perimetro; 
+			perimetro = parseInt (perimetro)
+			perimetro = lado*4; 
+			return perimetro; 
+			}
+		
+		var lado; 
+		lado = prompt ("Ingrese la medida del lado de un cuadrado: "); 
+		lado = parseInt (lado); 
+		document.write ("El perímetro del cuadrado es: " + perimetro (lado));  
+		// Apartado 3
+		function retornarDigitos (num)
+			{
+			if (num < 10)
+				{
+				return 1; 
+				}
+			else 
+				{
+				if (num < 100)
+					{
+					return 2; 
+					}
+				else 
+					{
+					if (num < 1000)
+						{
+						return 3; 
+						}
+					else 
+						{
+						if (num < 10000)
+							{
+							return 4; 
+							}
+						else 
+							{
+							return 5; 
+							}
+						}
+					}
+				}
+			}
+			
+		var num; 
+		num = prompt ("Ingrese un número positivo de hasta cinco dígitos: "); 
+		document.write ("La cantidad de dígitos del número es de: " + retornarDigitos (num)); 
+		// Apartado 4
+		function promedio (num1, num2, num3)
+			{
+			var promedio; 
+			promedio = parseInt (promedio); 
+			promedio = (num1 + num2 + num3) / 3; 
+			return promedio; 
+			}
+		
+		var num1;
+		num1 = prompt ("Ingrese el primer valor"); 
+		num1 = parseInt (num1); 
+		var num2; 
+		num2 = prompt ("Ingrese el segundo valor"); 
+		num2 = parseInt (num2); 
+		var num3; 
+		num3 = prompt ("Ingrese el tercer valor"); 
+		num3 = parseInt (num3); 
+		document.write ("El promedio de los tres números es de: " + promedio(num1, num2, num3)); 
+		// Apartado 5
+		function retornarSuma (num1, num2, num3, num4, num5)
+			{
+			var suma = 0; 
+			suma = num1 + num2 + num3 + num4 + num5; 
+			return suma; 
+			}
+			
+		var num1;
+		num1 = prompt ("Ingrese el primer valor"); 
+		num1 = parseInt (num1); 
+		var num2; 
+		num2 = prompt ("Ingrese el segundo valor"); 
+		num2 = parseInt (num2); 
+		var num3; 
+		num3 = prompt ("Ingrese el tercer valor"); 
+		num3 = parseInt (num3);
+		var num4;
+		num4 = prompt ("Ingrese el cuarto valor"); 
+		num4 = parseInt (num4); 
+		var num5; 
+		num5 = prompt ("Ingrese el quinto valor"); 
+		num5 = parseInt (num5); 
+		document.write ("La suma de los cinco valores es de: " + retornarSuma (num1, num2, num3, num4, num5)); 
+	
+	// Ejercicio 20
+	var fecha; 
+	fecha = new Date (); 
+	var mes = fecha.getMonth (); 
+	
+	if (mes < 4)
+		{
+		document.write ("Nos encontramos en el primer cuatrimestre del año"); 
+		}
+	else 
+		{
+			if (mes < 8)
+				{
+				document.write ("Nos encontramos en el segundo cuatrimestre del año"); 
+				}
+			else 
+				{
+				document.write ("Nos encontramos en el tercer cuatrimestre del año"); 
+				}
+		}
+	
+	// Ejercicio 21
+	
 		
 	
 		
