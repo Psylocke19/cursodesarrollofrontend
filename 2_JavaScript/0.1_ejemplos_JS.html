@@ -110,9 +110,348 @@
 		frase = prompt ("Ingresa una frase: "); 
 		var palabra; 
 		palabra = prompt ("Ingresa una palabra: "); 
+		var x; 
 
-		if (cande)
+		if (frase.indexOf (palabra) = -1)
+			{
+			document.write ("La palabra no está"); 
+			document.write ("<br/>");
+			}
+		else 
+			{
+			document.write	("La palabra está")
+			document.write ("<br/>");
+			}
+		// Apartado 4
+		var palabra; 
+		palabra = prompt ("Ingresa una palabra: ");
+		var cont = 0;  
+		var x; 
 
+		for (x = 0; x < palabra.length; x++)
+			{
+			if (palabra.charAt (x) == palabra.charAt (palabra.length-1 - x))
+				{
+				cont++; 
+				}
+			else 
+				{
+				break; 
+				}
+			}
+		if (cont == palabra.length)
+			{
+			document.write ("Es un palíndromo")
+			document.write ("<br/>");
+			}
+		else
+			{
+			document.write ("No es un palíndromo")
+			document.write ("<br/>");
+			}
+		// Apartado 5
+		var mail; 
+		mail = prompt ("Introduce tu e-mail: "); 
+		var x; 
+		cont = 0; 
+
+		for (x = 0; x < mail.length; x++)
+			{
+			if (mail.charAt (x) == "@")
+				{
+				cont++;
+				}
+			}
+		
+		if (cont == 0)
+			{
+			document.write ("El carácter @ no está cargado"); 
+			}
+		else 
+			{
+			document.write ("El carácter @ está cargado"); 
+			}
+		// Apartado 6
+		var cadena; 
+		cadena = prompt ("Introduce una cadena: ")
+
+		document.write ("La primera mitad de los caracteres de la cadena son: " + cadena.substring (0, cadena.length/2)); 
+		document.write ("<br/>");
+
+		document.write ("El último carácter es: " + cadena.charAt (cadena.length -1) ); 
+		document.write ("<br/>");
+
+		var cadenaInvertida = ""; 
+		for (x = cadena.length - 1; x >= 0; x--)
+			{
+			cadenaInvertida = cadenaInvertida + cadena.charAt (x); 
+			}
+		document.write ("Los caracteres de la cadena impresos de forma inversa son: " + cadenaInvertida); document.write ("<br/>");
+		
+		cadenaConGuion = ""; 
+		for (x = 0; x < cadena.length; x++)
+			{
+			cadenaConGuion = cadenaConGuion + (cadena.charAt (x) + "-");  
+			}
+		document.write ("Los caracteres de la cadena separados por guion son: " + cadenaConGuion ); 
+		document.write ("<br/>");
+
+		var cont = 0; 
+		for (x = 0; x < cadena.length; x++)
+			{
+			if (cadena.charAt (x) == "a" || cadena.charAt (x) == "e" || cadena.charAt (x) == "i" || cadena.charAt (x) == "o" || cadena.charAt (x) == "u")
+				{
+				cont++; 
+				}
+			}
+		document.write ("La cantidad de vocales almacenadas es de: " + cont); 
+		// Apartado 7
+		var oracion; 
+		oracion = prompt ("Ingresa una oración: "); 
+		var x; 
+
+		for (x = 0; x < oracion.length; x++)
+			{
+			document.write (oracion.charAt (x)); 
+			if (oracion.charAt (x) == " ")
+				{
+				document.write ("</br>"); 
+				}
+			}
+		
+	// Ejercicio 24
+	function presion1 ()
+		{
+		alert ("Se presionó el botón 1"); 
+		}
+	function presion2 ()
+		{
+		alert ("Se presionó el botón 2"); 
+		}
+	function presion3 ()
+		{
+		alert ("Se presionó el botón 3"); 
+		}
+	<form>
+		<input type = "button" onClick = "presion1 ()" value = "Botón 1">
+		<input type = "button" onClick = "presion2 ()" value = "Botón 2">
+		<input type = "button" onClick = "presion3 ()" value = "Botón 3">
+	</form>
+
+	// Ejercicio 25 
+		// Apartado 1
+		function cubo ()
+			{
+			var num = document.getElementById ("numero").value;num = parseInt (num); 
+			var cubo = num*num*num; 
+			alert (cubo); 
+			}
+		<form>
+		<input type = "text" id = "numero">
+		<br>
+		<input type = "button" value = "Calcular cubo" onClick = "cubo ()">
+		</form>
+		// Apartado 2
+		function mayor ()
+			{
+			var num1 = document.getElementById ("num1").value; 
+			num1 = parseInt (num1); 
+			var num2 = document.getElementById ("num2").value; 
+			num2 = parseInt (num2); 
+			if (num1 > num2)
+				{
+				alert (num1); 
+				}
+			else 
+				{
+				if (num1 < num2)
+					{
+					alert (num2); 
+					}
+				}
+			}
+		<form>
+		<input type = "text" id = "num1">
+		<input type = "text" id = "num2">
+		<input type = "button" value = "El mayor" onClick = "mayor ()">
+		</form>
+		// Apartado 3
+		function concatenar ()
+			{
+			var nombre = document.getElementById ("nombre").value; 
+			var apellido = document.getElementById ("apellido").value; 
+			document.getElementById ("nombreapellido").value = nombre + " " + apellido;
+			}
+		
+		<form>
+		<input type = "text" id = "nombre">
+		<input type = "text" id = "apellido">
+		<input type = "button" value = "Concatenar" onClick = "concatenar ()">
+		<input type = "text" id = "nombreapellido">
+		</form>
+
+	// Ejercicio 26
+	function confirmar ()
+		{
+		var contraseña = document.getElementById ("contraseña").value; 
+		var contraseñarep = document.getElementById ("contraseñarep").value; 
+		if (contraseña == contraseñarep)
+			{
+			alert ("Ambas claves coinciden"); 
+			}
+		else 
+			{
+			alert ("Ambas claves no coinciden"); 
+			}
+		}
+		
+	<form>
+	Ingrese una clave:
+	<input type = "password" id = "contraseña">
+	<br>
+	Repita la clave: 
+	<input type = "password" id = "contraseñarep">
+	<br>
+	<input type = "button" value = "Confirmar" onClick = "confirmar()">
+	</form>
+
+	// Ejercicio 27
+		// Apartado 1
+		function mostrarSeleccionPizza ()
+			{
+			document.getElementById ("resultado").value = document.getElementById ("pizza").options [document.getElementById ("pizza"). selectedIndex].value; 
+			}
+		<form>
+		Pizzas: 
+		<select id = "pizza" onChange = "mostrarSeleccionPizza ()">
+			<option value = "5"> Jamón y queso </option>
+			<option value = "6"> Carbonara </option>
+			<option value = "7"> Barbacoa </option>
+		</select> 
+		<br>
+		<input type = "text" id = "resultado">
+		</form>
+		// Apartado 2
+		function calcularPresupuesto ()
+			{
+			var procesador = document.getElementById ("procesador"); 
+			var precio1 = procesador.options [procesador.selectedIndex].value; 
+			var monitor = document.getElementById ("monitor"); 
+			var precio2 = monitor.options [monitor.selectedIndex].value; 
+			var discoduro = document.getElementById ("discoduro"); 
+			var precio3 = discoduro.options [discoduro.selectedIndex].value; 
+			precio1 = parseInt (precio1); 
+			precio2 = parseInt (precio2); 
+			precio3 = parseInt (precio3); 
+			var suma = precio1 + precio2 + precio3; 
+			document.getElementById ("resultado").value = suma;
+			}
+		
+		<form>
+		<select id = "procesador">
+			<option value = "400"> Intel I3 </option>
+			<option value = "600"> Intel I5 </option>
+			<option value = "800"> Intel I7 </option>
+		</select>
+		<select id = "monitor">
+			<option value = "250"> 20' </option>
+			<option value = "350"> 22' </option>
+			<option value = "550"> 26' </option>
+		</select>
+		<select id = "discoduro">
+			<option value = "300"> 500 Gb </option>
+			<option value = "440"> 1 Tb </option>
+			<option value = "500"> 3 Tb </option>
+		</select>
+		<br>
+		<input type = "button" value = "Calcular presupuesto" onClick = "calcularPresupuesto ()">
+		<br>
+		<input type = "text" id = "resultado">
+		</form>
+		// Apartado 3
+		function importeAbonar ()
+			{
+			var precio = document.getElementById ("pizza").value; 
+			precio = parseInt (precio); 
+			var numero = document.getElementById ("numero").value; 
+			numero = parseInt (numero); 
+			var precioTotal = precio*numero; 
+			document.getElementById ("resultado").value = precioTotal; 
+			}
+		
+		<form>
+		<select id = "pizza">
+			<option value = "4"> Queso </option>
+			<option value = "6"> Jamón y queso </option>
+			<option value = "10"> Especialidad </option>
+		</select>
+		<br>
+		<input type = "text" id = "numero">
+		<br>
+		<input type = "button" value = "Importe a abonar" onClick = "importeAbonar ()">
+		<br>
+		<input type = "text" id = "resultado">
+		</form>
+		// Apartado 4
+		function respuestasContestadas ()
+			{
+			var pregunta1 = document.getElementById ("pregunta1"); 
+			var pregunta2 = document.getElementById ("pregunta2"); 
+			var pregunta3 = document.getElementById ("pregunta3"); 
+			var pregunta4 = document.getElementById ("pregunta4"); 
+			var cont = 0; 
+			if (pregunta1.options [pregunta1.selectedIndex].value == 3)
+				{
+				cont++; 
+				}
+			if (pregunta2.options [pregunta2.selectedIndex].value == 1)
+				{
+				cont++; 
+				}
+			if (pregunta3.options [pregunta3.selectedIndex].value == 2)
+				{
+				cont++; 
+				}
+			if (pregunta4.options [pregunta4.selectedIndex].value == 2)
+				{
+				cont++; 
+				}
+			alert ("Cantidad de respuestas correctas: " + cont); 
+			}
+
+		<form>
+		¿Cómo se dice rojo en inglés?
+		<br>
+		<select id = "pregunta1">
+			<option value = "1"> Blue </option>
+			<option value = "2"> Green </option>
+			<option value = "3"> Red </option>
+		</select>
+		¿Cómo se dice ventana en inglés?
+		<br>
+		<select id = "pregunta2">
+			<option value = "1"> Window </option>
+			<option value = "2"> Door </option>
+			<option value = "3"> Bedroom </option>
+		</select>
+		¿Cómo se dice gato en inglés?
+		<br>
+		<select id = "pregunta3">
+			<option value = "1"> Dog </option>
+			<option value = "2"> Cat </option>
+			<option value = "3"> Lion </option>
+		</select>
+		¿Cómo se dice hombre en inglés?
+		<br>
+		<select id = "pregunta4">
+			<option value = "1"> Woman </option>
+			<option value = "2"> Man </option>
+			<option value = "3"> Child </option>
+		</select>
+		<input type = "button" value = "Respuestas" onClick = "respuestasContestadas ()">
+		</form>
+		
+	// Ejercicio 28	
 
 		
 	
