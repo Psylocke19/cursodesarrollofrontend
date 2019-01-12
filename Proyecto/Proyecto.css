@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+    {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white; 
+    }
+
+.header
+    {
+    position: relative; 
+    padding: 60px; 
+    padding-bottom: 10px; 
+    text-align: center;
+    background-image: url(portadaweb.jpg); 
+    color: white;  
+    }
+
+.header h1
+    {
+    font-size: 40px; 
+    color: black; 
+    }
+
+.nav 
+    {
+    position: relative; 
+    background-color: black; 
+    color: white; 
+    top: 0; 
+    overflow: hidden; 
+    width: 100%; 
+    float: left;  
+    }
+
+.nav ul
+    {
+    float: left; 
+    left: 20%; 
+    list-style-type: none;
+    position: relative; 
+    margin: 0 auto; 
+    padding: 0; 
+    }
+
+.nav li
+    {
+    float: left; 
+    }
+
+.nav li a 
+    {
+    display: block;
+    padding: 30px 30px;
+    text-decoration: none;
+    color: white;
+    text-align: center; 
+    }
+
+.nav li a:hover
+    {      
+    background-color: #ddd; 
+    color: black; 
+    }
+
+.primates 
+    {
+    top: 80px; 
+    left: 0px; 
+    }
+
+.hominizacion
+    {
+    top: 60px; 
+    left: 0px;
+    }
+
+/* Id */
+
+#contenedor
+    {
+    background-color:#d8d8d8;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-radius: 8px;
+    }
+
+#tabla
+    {
+    font-family:Arial, Helvetica, sans-serif; 
+    border-collapse: collapse; 
+    width: 50%;   
+    }
+
+#tabla tr:nth-child(even)
+    {
+    background-color: #f2f2f2; 
+    }
+
+#tabla tr:hover
+    {
+    background-color:#ddd; 
+    }
+
+#tabla th
+    {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 120px;  
+    text-align: left;
+    background-color: #33334d;
+    color: white;
+    }
+
+#myProgress
+    {
+    background-color: white; 
+    width: 50%; 
+    }
+
+#myBar
+    {
+    background-color: darkgreen; 
+    width: 1%; 
+    }
+
+.button
+    {
+    background-color: black; 
+    border: none; 
+    color: white; 
+    padding: 15px 32 px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 20 px; 
+    margin: 8px 4px; 
+    cursor: pointer; 
+    }
+
+#html
+    {
+    background-color:#4CAF50;
+    }
+
+#css
+    {
+    width: 50%; background-color:#4CAF50;
+    }
+
+#js
+    {
+    width: 60%; background-color:#4CAF50;
+    }
+
+#bio
+    {
+    width: 90%; background-color:#4CAF50;
+    }
+
+footer
+    {
+    position: relative; 
+    background-color: black; 
+    color: white; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center; 
+    }
+
+.fab
+    {
+    color: white; 
+    }
+
