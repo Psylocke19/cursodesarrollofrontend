@@ -72,8 +72,7 @@
             <h2>Los homínidos</h2>
             <!-- Árbol filogenético interactivo-->
             <h3>Árbol filogenético de los homínidos</h3>
-            <body onresize="imageMapResize()">
-                <img class="tree" src="./img/evolutionarytree.jpg" alt="Evolution Tree" usemap="#tree">
+                <img class="tree" src="./img/evolutionarytree.jpg" alt="Evolution Tree" usemap="#tree" onresize="imageMapResize()" onload="imageMapResize()">
                 <map name="tree">
                     <area shape="rect" coords ="511,328,651,503" alt="Australopithecus" href="#australopithecus">   
                     <area shape="rect" coords ="390,307,480,368" alt="Homo habilis" href="#habilis" title = "Haz click aquí para saber más">
@@ -81,7 +80,7 @@
                     <area shape="rect" coords ="251,138,357,222" alt="Homo erectus" href="#erectus" title = "Haz click aquí para saber más">
                     <area shape="rect" coords ="219,229,321,277" alt="Homo antecessor" href="#antecessor" title = "Haz click aquí para saber más">
                     <area shape="rect" coords ="252,14,369,84" alt="Homo neanderthalensis" href="#neanderthalensis" title = "Haz click aquí para saber más">
-                    <area shape="rect" coords ="149,9,239,85" alt="Homo sapiens" href="#sapiens" title = "Haz click aquí para saber más" >
+                    <area shape="rect" coords ="149,9,239,85" alt="Homo sapiens" href="#sapiens" title = "Haz click aquí para saber más">
                 </map>
 
                 <!--Tablas con características de cada grupo de homínidos-->
