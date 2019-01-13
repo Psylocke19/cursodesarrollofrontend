@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Proyecto.css" type="text/css">
+    <link rel="stylesheet" href="./css/Proyecto.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script type="text/javascript" src="./js/external/imageMapResizer.min.js"></script>
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Antropología física </title>
@@ -28,6 +29,8 @@
     </nav>
 
     <!-- Contenido -->
+
+        <!-- Características del orden Primates-->
         <section  id="contenedor" class="primates">
         <a name="primates">
             <h2>El orden Primates</h2>
@@ -40,6 +43,8 @@
                 </ol></p>
         </a>
         </section> 
+
+        <!--Características de la hominización-->
         <section id="contenedor" class= "hominizacion">
         <a name="hominizacion">
             <h2>La hominización</h2>
@@ -60,11 +65,28 @@
                 </ul></p>
         </a>
         </section>
+
+        <!--Apartado sobre los homínidos-->
         <section id="contenedor" class= "hominidos">
         <a name="hominidos">
             <h2>Los homínidos</h2>
+            <!-- Árbol filogenético interactivo-->
             <h3>Árbol filogenético de los homínidos</h3>
-                <p><i><b>Australopitechus</b></i></p>
+            <body onresize="imageMapResize()">
+                <img class="tree" src="./img/evolutionarytree.jpg" alt="Evolution Tree" usemap="#tree">
+                <map name="tree">
+                    <area shape="rect" coords ="511,328,651,503" alt="Australopithecus" href="#australopithecus">   
+                    <area shape="rect" coords ="390,307,480,368" alt="Homo habilis" href="#habilis" title = "Haz click aquí para saber más">
+                    <area shape="rect" coords ="324,230,398,304" alt="Homo ergaster" href="#ergaster" title = "Haz click aquí para saber más">
+                    <area shape="rect" coords ="251,138,357,222" alt="Homo erectus" href="#erectus" title = "Haz click aquí para saber más">
+                    <area shape="rect" coords ="219,229,321,277" alt="Homo antecessor" href="#antecessor" title = "Haz click aquí para saber más">
+                    <area shape="rect" coords ="252,14,369,84" alt="Homo neanderthalensis" href="#neanderthalensis" title = "Haz click aquí para saber más">
+                    <area shape="rect" coords ="149,9,239,85" alt="Homo sapiens" href="#sapiens" title = "Haz click aquí para saber más" >
+                </map>
+
+                <!--Tablas con características de cada grupo de homínidos-->
+                <a name="australopithecus"></a>
+                <p><i><b>Australopitechus</b></i></p> 
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -83,6 +105,8 @@
                         <td>No conocían técnicas de caza.</td>
                     </tr>
                 </table> 
+
+                <a name="habilis"></a>
                 <p><i><b>Homo habilis</b></i></p>
                 <table id="tabla">
                     <tr>
@@ -102,6 +126,8 @@
                         <td>Empleaba útiles, lascas y cantos de manera habitual.</td>
                     </tr>
                 </table> 
+
+                <a name="ergaster"></a>
                 <p><i><b>Homo ergaster</b></i></p>
                 <table id="tabla">
                      <tr>
@@ -121,6 +147,8 @@
                         <td>Elaboraba herramientas más sofisticadas y establecía relaciones sociales complejas.</td>
                     </tr>
                 </table>
+
+                <a name="erectus"></a>
                 <p><i><b>Homo erectus</b></i></p>
                 <table id="tabla">
                     <tr>
@@ -140,6 +168,8 @@
                         <td>Empleaba lascas y cantos, tallaba la piedra y dominaba el fuego.</td>
                     </tr>
                 </table>
+
+                <a name="antecessor"></a>
                 <p><i><b>Homo antecessor</b></i></p>
                 <table id="tabla">
                     <tr>
@@ -159,6 +189,8 @@
                         <td>Empleaba palos, huesos y piedras para desgarrar la carne.</td>
                     </tr>
                 </table>
+
+                <a name="neanderthalensis"></a>
                 <p><i><b>Homo neanderthalensis</b></i></p>
                 <table id="tabla">
                     <tr>
@@ -178,6 +210,8 @@
                         <td>Fabricaba hojas de cuchillo y puntas de flecha. Practicaba enterramientos rituales. Coexistió con <i>Homo sapiens</i>.</td>
                     </tr>
                 </table>
+
+                <a name="sapiens"></a>
                 <p><i><b>Homo sapiens</b></i></p>
                 <table id="tabla">
                     <tr>
@@ -198,6 +232,8 @@
                     </tr>
                 </table>
         </a>
+
+        <!--Apartado sobre tests de conocimientos-->
         </section> 
         <section id="contenedor" class= "test">
         <a name="test">
@@ -205,6 +241,8 @@
             <p>Preguntas tipo test</p>
             </a>
         </section>
+
+        <!--Apartado de contacto e información sobre mí-->
         <section id="contenedor" class= "sobremi">
         <a name="yo">
             <h2>Currículum</h2>
@@ -224,37 +262,40 @@
                 <li>HTML5.</li>
                 </ul> 
             </ul>
+            
+            <!--Subapartado de habilidades con js-->
             <p><b>Habilidades</b></p>
-            <script src="Proyecto.js"></script>
-            <p>HTML</p>
+            <script type="text/javascript" src="./js/internal/Proyecto.js"></script>
+            HTML5
                 <div id="myProgress">
-                    <div id="myBar">60%</div>
+                    <div id="myBarHTML">70%</div>
                 </div>
-                <button class= "button" onclick="move()">Click Me</button>
-            <p>CSS</p>
-                <div class="skillsbar">
-                    <div class="skills css">50%</div>
+            CSS3
+                <div id="myProgress">
+                    <div id="myBarCSS">65%</div>
                 </div>
-            <p>JavaScript</p>
-                <div class="skillsbar">
-                    <div class="skills js">60%</div>
+            JavaScript
+                <div id="myProgress">
+                    <div id="myBarJS">60%</div>
                 </div>
-            <p>Biología general</p>
-                <div class="skillsbar">
-                    <div class="skills bio">90%</div>
+            Biología
+                <div id="myProgress">
+                    <div id="myBarBG">90%</div>
                 </div>
+                <button class= "button" onclick=
+                "initializeBars ([ &quot;myBarHTML&quot;, &quot;myBarCSS&quot;, &quot;myBarJS&quot;, &quot;myBarBG&quot;],[70, 60, 65, 90])">Click Me</button>
         </a>
         </section> 
    
-    <! -- Footer -->
+    <!-- Footer -->
     <footer>
-        <a href="#">
+        <a href="https://www.instagram.com/psylocke19/?hl=es">
             <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="#">
+        <a href="https://twitter.com/psylocke19">
             <i class="fab fa-twitter-square fa-2x"></i>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/paula-s-47732895">
             <i class="fab fa-linkedin fa-2x"></i>
         </a>
         <p class= "author">Creado por Paula Santiago de la Cruz</p>
