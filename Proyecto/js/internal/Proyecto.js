@@ -30,3 +30,7 @@ function setBarValue(barName, barValue)
       }
   }
 
+  $('a').on('click', function(){
+    var target = $(this).attr('rel');
+    $("#"+target).show().siblings("section").hide();
+ });
