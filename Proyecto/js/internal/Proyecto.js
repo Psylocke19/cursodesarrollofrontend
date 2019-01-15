@@ -30,3 +30,4 @@ function setBarValue(barName, barValue)
       }
   }
 
+ 

@@ -1,11 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
-body
+*
     {
-    font-family: Arial, Helvetica, sans-serif;
-    background: white; 
+    font-family:'Lato', sans-serif;
     }
+
 
 .header
     {
@@ -13,14 +13,21 @@ body
     padding: 60px; 
     padding-bottom: 10px; 
     text-align: center;
-    background-image: url("../img/portadaweb.jpg"); 
+    background: #4CAF50; 
     color: white;  
     }
 
 .header h1
     {
-    font-size: 40px; 
+    font-size: 80px; 
     color: black; 
+    font-family: 'Anton', sans-serif;
+    }
+
+.header p
+{
+    font-size: 30px; 
+    font-family: 'Anton', sans-serif;
     }
 
 .nav 
@@ -37,7 +44,6 @@ body
 .nav ul
     {
     float: left; 
-    left: 20%; 
     list-style-type: none;
     position: relative; 
     margin: 0 auto; 
@@ -55,7 +61,7 @@ body
     padding: 30px 30px;
     text-decoration: none;
     color: white;
-    text-align: center; 
+    text-align: center;  
     }
 
 .nav li a:hover
@@ -76,13 +82,35 @@ body
     left: 0px;
     }
 
+.primatesdiv
+    {
+    color: white; 
+    background: #4CAF50; 
+    margin: auto; 
+    width: 50%; 
+    text-align: center;
+    margin-top: 8px; 
+    }
+
+button {
+        background-color: black; 
+        border: none;
+        color: white;
+        padding: 15px 32px; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+
 /* Id contenedor de los distintos apartados */
 #contenedor
     {
-    background-color:#d8d8d8;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-radius: 8px;
+    background-color: white; 
+    border-style: none; 
     }
 
 /* Imagen árbol filogenético */
@@ -164,6 +192,7 @@ footer
     bottom: 0; 
     width: 100%; 
     text-align: center; 
+    margin-top: 8px; 
     }
 
 /* Estilo de los iconos del footer */
