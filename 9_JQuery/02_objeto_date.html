@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_texto"></div>
+    <div id="div_texto1"></div>
+    <div id="div_texto2"></div>
+    <div id="div_texto3"></div>
+    <div id="div_texto4"></div>
+    <div id="div_texto5"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(
+            function()
+                {
+                var fechaActual = new Date(); 
+                $("#div_texto").html("Año: " + fechaActual.getFullYear()); 
+                $("#div_texto1").html("Mes: " + fechaActual.getMonth()); 
+                $("#div_texto2").html("Día: " + fechaActual.getDate()); 
+                $("#div_texto3").html("Horas: " + fechaActual.getHours()); 
+                $("#div_texto4").html("Minutos: " + fechaActual.getMinutes()); 
+                $("#div_texto5").html("Segundos: " + fechaActual.getSeconds()); 
+
+                }
+        ); 
+    </script>
+</body>
+</html>
