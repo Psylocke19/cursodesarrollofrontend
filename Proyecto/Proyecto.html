@@ -88,19 +88,19 @@
 
         <!--Apartado sobre los homínidos-->
         <section id="contenedor" class= "hominidos">
-        <a name="hominidos">
+        <a name="hominidos" >
             <div class="primatesdiv">
             <h2>Los homínidos</h2>
             </div>
             <!-- Árbol filogenético interactivo-->
             <div style="text-align:center;">
-                    <button type="button" data-toggle="collapse" data-target="#apartado3"> Haz click para saber más</button>
+                    <button type="button" data-toggle="collapse" data-target="#apartado3" onclick="imageMapResize();"> Haz click para saber más</button>
             </div>
             <div id="apartado3" class="collapse hide">
                 <h3 style="text-align:center;">Árbol filogenético de los homínidos</h3>
-                <img class="tree" src="./img/evolutionarytree.jpg" alt="Evolution Tree" usemap="#tree" onresize="imageMapResize()" onload="imageMapResize()">
+                <img class="tree" src="./img/evolutionarytree.jpg" alt="Evolution Tree" usemap="#tree" onmouseleave="imageMapResize();" onresize="imageMapResize();">
                 <map name="tree">
-                    <area shape="rect" coords ="511,328,651,503" alt="Australopithecus" href="#australopithecus">   
+                    <area shape="rect" coords ="511,328,651,503" alt="Australopithecus" href="#australopithecus" title = "Haz click aquí para saber más">   
                     <area shape="rect" coords ="390,307,480,368" alt="Homo habilis" href="#habilis" title = "Haz click aquí para saber más">
                     <area shape="rect" coords ="324,230,398,304" alt="Homo ergaster" href="#ergaster" title = "Haz click aquí para saber más">
                     <area shape="rect" coords ="251,138,357,222" alt="Homo erectus" href="#erectus" title = "Haz click aquí para saber más">
