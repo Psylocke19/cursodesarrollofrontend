@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./css/Proyecto.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script type="text/javascript" src="./js/external/imageMapResizer.min.js"></script>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
   
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -48,10 +48,14 @@
             <div id="apartado1" class="collapse hide">
             <h3>Características</h3>
             <p><ol>
-                    <li>Las órbitas oculares están dirigidas hacia delante y la visión es estereoscópica. </li>
-                    <li>El antebrazo tiene una estructura ósea y muscular que les permite trepar.</li>
-                    <li>Presentan un dedo pulgar oponible en las cuatro extremidades (excepto la especie humana, que solo lo tiene en las manos).</li>
-                    <li>Poseen uñas planas en lugar de garras. </li>
+                    <div class="greencontainer"><li>Las órbitas oculares están dirigidas hacia delante y la visión es estereoscópica. </li>
+                    <img class="eyes" src="./img/ojos_prim.jpg"></div>
+                    <div class="greencontainer"><li>El antebrazo tiene una estructura ósea y muscular que les permite trepar.</li>
+                    <img class="arms" src="./img/antebrazo_prim.jpg"></div>
+                    <div class="greencontainer"><li>Presentan un dedo pulgar oponible en las cuatro extremidades (excepto la especie humana, que solo lo tiene en las manos).</li>
+                    <img class="finger" src="./img/oponible_prim.jpg"></div>
+                    <div class="greencontainer"><li>Poseen uñas planas en lugar de garras. </li>
+                    <img class="nails" src="./img/garras_prim.jpg"></div>
                 </ol></p>
         </div>
             </a>
@@ -69,18 +73,22 @@
             <div id="apartado2" class="collapse hide">
             <h3>Características</h3>
                 <p><ul>
-                    <li>Adquisición de la marcha bípeda.</li>
-                    <li>Brazos más cortos que las piernas.</li>
-                    <li>Columna vertebral con cuatro curvaturas.</li>
-                    <li>Aumento de la capacidad craneal hasta 1500 cm3.</li>
-                    <li>Cráneo globoso, sin crestas.</li>
-                    <li>Disminución del prognatismo y de los arcos superciliares.</li>
-                    <li>Foramen magnum en posición inferior.</li>
-                    <li>Mandíbula semicircular.</li>
-                    <li>Reducción de tamaño de los caninos.</li>
-                    <li>Pulgar oponible solo en las manos.</li>
-                    <li>Adquisición de racionalidad, lenguaje y capacidad de abstracción y creación de manifestaciones artísticas.</li>
-                    <li>Capacidad para la creación de herramientas.</li>
+                    <div class="greencontainer"><li>Adquisición de la marcha bípeda y brazos más cortos que las piernas.</li>
+                    <img class="bipedism" src="./img/brazos_hom.jpg"></div>
+                    <div class="greencontainer"><li>Columna vertebral con cuatro curvaturas.</li>
+                    <img class="spine" src="./img/columna_hom.jpg"></div>
+                    <div class="greencontainer"><li>Aumento de la capacidad craneal hasta 1500 cm3, cráneo globoso, disminución del prognatismo y de los arcos superciliares.</li>
+                    <img class="skull" src="./img/prognatismo_hom.jpg"></div>
+                    <div class="greencontainer"><li>Foramen magnum en posición inferior.</li>
+                    <img class="magnum" src="./img/foramen_hom.jpg"></div>
+                    <div class="greencontainer"><li>Mandíbula semicircular.</li>
+                    <img class="jaw" src="./img/mandibula_hom.jpg"></div>
+                    <div class="greencontainer"><li>Reducción de tamaño de los caninos.</li>
+                    <img class="teeth" src="./img/caninos_hom.jpg"></div>
+                    <div class="greencontainer"><li>Adquisición de racionalidad, lenguaje y capacidad de abstracción y creación de manifestaciones artísticas.</li>
+                    <img class="paint" src="./img/arte_hom.jpg"></div>
+                    <div class="greencontainer"><li>Capacidad para la creación de herramientas.</li>
+                    <img class="tools" src="./img/herramientas_hom.jpg"></div>
                 </ul></p>
             </div>
         </a>
@@ -110,8 +118,9 @@
                 </map>
 
                 <!--Tablas con características de cada grupo de homínidos-->
+                <div class="greencontainer">
                 <a name="australopithecus"></a>
-                <p><i><b>Australopitechus</b></i></p> 
+                <b><h2>Australopithecus</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -130,9 +139,13 @@
                         <td>No conocían técnicas de caza.</td>
                     </tr>
                 </table> 
+                <img class="australopithecus_body" src="./img/australopithecus_body.jpg">
+                <img class="australopithecus_skull" src="./img/australopithecus_skull.jpg">
+                </div>
 
+                <div class="greencontainer">
                 <a name="habilis"></a>
-                <p><i><b>Homo habilis</b></i></p>
+                <b><h2>Homo habilis</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -151,9 +164,13 @@
                         <td>Empleaba útiles, lascas y cantos de manera habitual.</td>
                     </tr>
                 </table> 
+                <img class="habilis_body" src="./img/habilis_body.jpg">
+                <img class="habilis_skull" src="./img/habilis_skull.jpg">
+                </div>
 
+                <div class="greencontainer">
                 <a name="ergaster"></a>
-                <p><i><b>Homo ergaster</b></i></p>
+                <b><h2>Homo ergaster</h2></b>
                 <table id="tabla">
                      <tr>
                          <th>Edad</th>
@@ -172,9 +189,13 @@
                         <td>Elaboraba herramientas más sofisticadas y establecía relaciones sociales complejas.</td>
                     </tr>
                 </table>
+                <img class="ergaster_body" src="./img/ergaster_body.jpg">
+                <img class="ergaster_skull" src="./img/ergaster_skull.jpg">
+                </div>
 
+                <div class="greencontainer">
                 <a name="erectus"></a>
-                <p><i><b>Homo erectus</b></i></p>
+                <b><h2>Homo erectus</h2></b>
                 <table id="tabla">
                     <tr>
                          <th>Edad</th>
@@ -193,9 +214,13 @@
                         <td>Empleaba lascas y cantos, tallaba la piedra y dominaba el fuego.</td>
                     </tr>
                 </table>
+                <img class="erectus_body" src="./img/erectus_body.jpg">
+                <img class="erectus_skull" src="./img/erectus_skull.jpg">
+                </div>
 
+                <div class="greencontainer">
                 <a name="antecessor"></a>
-                <p><i><b>Homo antecessor</b></i></p>
+                <b><h2>Homo antecessor</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -214,9 +239,13 @@
                         <td>Empleaba palos, huesos y piedras para desgarrar la carne.</td>
                     </tr>
                 </table>
+                <img class="antecessor_body" src="./img/antecessor_body.jpg">
+                <img class="antecessor_skull" src="./img/antecessor_skull.jpg">
+                </div>
 
+                <div class="greencontainer">
                 <a name="neanderthalensis"></a>
-                <p><i><b>Homo neanderthalensis</b></i></p>
+                <b><h2>Homo neanderthalensis</h2></p>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -235,9 +264,13 @@
                         <td>Fabricaba hojas de cuchillo y puntas de flecha. Practicaba enterramientos rituales. Coexistió con <i>Homo sapiens</i>.</td>
                     </tr>
                 </table>
+                <img class="neanderthalensis_body" src="./img/neanderthalensis_body.jpg">
+                <img class="neanderthalensis_skull" src="./img/neanderthalensis_skull.jpg">
+                </div>
 
+                <div class="greencontainer">
                 <a name="sapiens"></a>
-                <p><i><b>Homo sapiens</b></i></p>
+                <b><h2>Homo sapiens</h2> </b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -256,6 +289,9 @@
                         <td>Fabricaba útiles de caza y objetos decorativos y domésticos de distintos materiales. Manifiesta su sentido artístico en las pinturas rupestres.</td>
                     </tr>
                 </table>
+                <img class="sapiens_body" src="./img/sapiens_body.jpg">
+                <img class="sapiens_skull" src="./img/sapiens_skull.jpg">
+                </div>
             </div>
             </a>
 
