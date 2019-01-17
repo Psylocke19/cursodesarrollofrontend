@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>Dimensiones</button>
+    <p id="document">Texto de prueba</p>
+
+    <style>
+        #document
+            {
+            max-height: 150px;
+            max-width: 150px; 
+            background: red; 
+            }
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function()
+        {
+        $("button").click(function()
+        {
+        var txt = "";
+        txt += "Las medidas del párrafo son: " + $("#document").width(); 
+        txt += "x" + $("#document").height() + "px" + "\n";
+        txt += "Las medidas de la ventana son: " + $(window).width(); 
+        txt += "x" + $(window).height() + "px";
+        alert(txt);
+     });
+    });
+</script>
+
+    
+</body>
+</html>

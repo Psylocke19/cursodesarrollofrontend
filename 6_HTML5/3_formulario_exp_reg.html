@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Cabecera de la web-->
+    <header>
+        <h1>Formulario HTML5</h1>
+    </header>
+    
+    <section>
+        <form id="miform" method="get">
+            Nombre: <input type="text" id="nombre" placeholder="Introduzca un nombre correctamente" pattern="^[A-Z]{1}[a-z]([A-Z]{1}[a-z]+)?$"/><br/>
+            <!--Edad mediante expresión regular-->
+            Edad: <input type="number" id="numero" pattern="1?/d{1,2}"><br/>
+            E-mail: <input type="email" id="mi_email"/><br/>
+            Búsqueda: <input type="search" id="busqueda"/><br/>
+            URL: <input type="url" id="mi_url"/><br/>
+            <!--Teléfono mediante expresión regular-->
+            Teléfono: <input type="tel" id="telefono" pattern="^d{2,3}-?\d{7,8}"/><br/>
+            <!--Código postal mediante expresión regular-->
+            Código postal: <input type="number" id="num_postal" pattern="[0-5]\d{4}"/><br/>
+            <!--DNI mediante expresión regular-->
+            <input type="text" id="dni" pattern="^[0-9]{6,8}-?[A-Z]$"/><br/>
+            <!--Fecha de nacimiento mediante expresión regular-->
+            <input type="date" id="nacimiento"/><br/>
+    
+        </form>
+    </section>
+</body>
+</html>

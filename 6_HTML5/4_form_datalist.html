@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="frutas" list="lista_frutas"/>
+        <datalist id="lista_frutas">
+            <option value="Manzanas"></option>
+            <option value="Peras"></option>
+            <option value="Chirimoyas"></option>
+        </datalist>
+    </form>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function()
+            {
+            $("#lista_frutas").append("<option value='Uvas'></option>"); 
+            var otrasFrutas = ["Platanos", "Ciruelas", "Aguacates"]; 
+            for (var x=0; x < otrasFrutas.length; x++)
+                {
+                $("#lista_frutas").append("<option value='" + otrasFrutas[x] + "'></option>"); 
+                }
+            }); 
+        
+        
+    </script>
+</body>
+</html>

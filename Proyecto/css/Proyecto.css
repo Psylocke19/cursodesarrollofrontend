@@ -4,6 +4,7 @@
 *
     {
     font-family:'Lato', sans-serif;
+    font-size: 15px; 
     }
 
 
@@ -113,6 +114,38 @@ button {
     border-style: none; 
     }
 
+/* Puntos de características */
+li
+    {
+    display: block; 
+    text-align: center;  
+    }
+
+/* Contenedores verdes de cada apartado */
+.greencontainer
+    {
+    background: #4CAF50; 
+    width: 75%; 
+    padding-bottom: 30px;
+    text-align: center; 
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    font-size: 6em;  
+    overflow: auto;
+    }
+    
+
+/* Resto de imágenes */
+.eyes, .arms, .finger, .nails, .bipedism, .spine, .skull, .magnum, .jaw, .teeth, .paint, .tools, .australopithecus_body, .australopithecus_skull, .habilis_body, .habilis_skull, .ergaster_body, .ergaster_skull, .erectus_body, .erectus_skull, .antecessor_body, .antecessor_skull, .neanderthalensis_body, .neanderthalensis_skull, .sapiens_body, .sapiens_skull
+    {
+    height: auto; 
+    width: 30%; 
+    max-height: 600px; 
+    margin-top: 20px; 
+    }
+
 /* Imagen árbol filogenético */
 .tree
     {
@@ -123,14 +156,13 @@ button {
     margin-right: auto; 
     }
 
-
-
 /* Pack de tablas */
 #tabla
     {
-    font-family:Arial, Helvetica, sans-serif; 
-    border-collapse: collapse; 
-    width: 50%;   
+    font-family:Arial, Helvetica, sans-serif;   
+    text-align: center; 
+    margin: 0 auto; 
+    width: 70%; 
     }
 
 #tabla tr:nth-child(even)
@@ -138,19 +170,26 @@ button {
     background-color: #f2f2f2; 
     }
 
+#tabla td
+    {
+    font-size: medium; 
+    }
+
 #tabla tr:hover
     {
-    background-color:#ddd; 
+    background-color:#ddd;  
     }
 
 #tabla th
     {
     padding-top: 12px;
-    padding-bottom: 12px;
-    width: 120px;  
-    text-align: left;
+    padding-bottom: 12px;  
+    text-align: center;
     background-color: #33334d;
-    color: white;
+    color: white; 
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: medium; 
     }
 
 /* Barras blancas de skills */
