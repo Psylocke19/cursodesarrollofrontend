@@ -14,7 +14,7 @@ function setBarValue(barName, barValue)
     var elem = document.getElementById(barName);
     var width = 1;
     var id = setInterval(frame, 10);
-  
+    
     function frame() 
       {
         if (width >= barValue) 
@@ -30,20 +30,17 @@ function setBarValue(barName, barValue)
       }
   }
 
-// Funciones para el movimiento de los slides apartado 1
-var slideText = 1; 
-showSlides (slideText); 
 
-function currentSlide(n)
-  {
-  showSlides (slideIndex = n); 
-  }
 
-function showSlides(n)
+//Esta función muestra la slide número <n> con class=<containerName> y con puntos class=<dotName>
+function showSlides(n, containerName, dotName)
   {
   var i; 
-  var slides = document.getElementsByClassName ("greencontainer1"); 
-  var dots = document.getElementsByClassName ("dot"); 
+  var slides = document.getElementsByClassName (containerName); 
+  var dots = document.getElementsByClassName (dotName); 
+  var slideIndex = n;
+
+  //Controlo que la variable n viene con formato correcto
   if (n > slides.length)
     {
     slideIndex = 1;
@@ -52,6 +49,7 @@ function showSlides(n)
     {
     slideIndex = slides.length; 
     }
+
   for (i=0; i<slides.length; i++)
     {
     slides[i].style.display = "none"; 
@@ -63,38 +61,8 @@ function showSlides(n)
   slides[slideIndex -1].style.display = "block"; 
   dots[slideIndex-1].className += " active"
   }
-
-// Funciones para el movimiento de los slides apartado 2
-var slideText2 = 1; 
-showSlides2 (slideText2); 
-
-function currentSlide2(n)
-  {
-  showSlides2 (slideIndex2 = n); 
-  }
-
-function showSlides2(n)
-  {
-  var i; 
-  var slides2 = document.getElementsByClassName ("greencontainer2"); 
-  var dots2 = document.getElementsByClassName ("dot2"); 
-  if (n > slides2.length)
-    {
-    slideIndex2 = 1;
-    }
-  if (n < 1)
-    {
-    slideIndex2 = slides2.length; 
-    }
-  for (i=0; i<slides2.length; i++)
-    {
-    slides2[i].style.display = "none"; 
-    }
-  for (i=0; i<dots2.length; i++)
-    {
-    dots2[i].className = dots2[i].className.replace("active", ""); 
-    }
-  slides2[slideIndex2 -1].style.display = "block"; 
-  dots2[slideIndex2-1].className += " active"
-  }
  
+
+//Esto inicializa todos los slides
+showSlides(1, 'greencontainer1', 'dot');
+showSlides(1, 'greencontainer2', 'dot2');

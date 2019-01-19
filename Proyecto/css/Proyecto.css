@@ -94,16 +94,7 @@ ul li
 /* Slideshows de los primeros apartados */
 
 /* Contenedor con todos los slides */
-.slideshow-container
-    {
-    position: relative; 
-    background: white; 
-    width: 75%; 
-    margin-right: auto;
-    margin-left: auto; 
-    }
-
-.slideshow-container2
+.slideshow-container, .slideshow-container2
     {
     position: relative; 
     background: white; 
@@ -113,17 +104,7 @@ ul li
     }
 
 /* Contenedor de los puntos de abajo */
-.dot-container 
-    {
-    text-align: center;
-    padding: 20px;
-    background: white;
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto; 
-    }
-
-.dot-container2 
+.dot-container, .dot-container2 
     {
     text-align: center;
     padding: 20px;
@@ -134,7 +115,7 @@ ul li
     }
 
 /* Puntos */
-.dot 
+.dot, .dot2
     {
     cursor: pointer;
     height: 15px;
@@ -146,25 +127,9 @@ ul li
     transition: background-color 0.6s ease;
     }
 
-.dot2
-    {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    }
 
 /* Sombra negra al poner el ratón sobre los puntos */
-.active, .dot:hover 
-    {
-    background-color: #717171;
-    }
-
-.active, .dot2:hover 
+.active, .dot:hover, .dot2:hover 
     {
     background-color: #717171;
     }
@@ -237,23 +202,7 @@ li
     overflow: auto;
     }
 
-.greencontainer1
-    {
-    background: #4CAF50; 
-    width: 75%; 
-    height: 450px;
-    padding-bottom: 30px;
-    text-align: center; 
-    margin-right: auto;
-    margin-left: auto; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    font-size: 6em;  
-    overflow: auto;
-    display: none; 
-    }
-
-.greencontainer2
+.greencontainer1, .greencontainer2
     {
     background: #4CAF50; 
     width: 75%; 
