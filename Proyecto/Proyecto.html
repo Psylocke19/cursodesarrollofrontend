@@ -24,6 +24,7 @@
     </div>
 
     <!-- Barra de navegación -->
+    <a name="top"></a>
     <nav class= "nav">
         <ul>
             <li><a href="#primates" rel="primates">El orden Primates</a></li> 
@@ -33,6 +34,7 @@
             <li><a href="#yo">Sobre mí</a></li>
         </ul>
     </nav>
+    </a>
 <body>
     <!-- Contenido -->
 
@@ -40,56 +42,84 @@
         <section id="contenedor" class="primates">
         <a name="primates">
             <div class="primatesdiv">
-            <h2>El orden Primates</h2>
+            <h2 style="font-family: 'Anton', sans-serif;">El orden Primates</h2>
             </div>
-            <div style="text-align:center;">
-            <button type="button" data-toggle="collapse" data-target="#apartado1"> Haz click para saber más</button>
-            </div>
+                <div style="text-align:center;">
+                <button type="button" data-toggle="collapse" data-target="#apartado1"> Haz click para saber más</button>
+                </div>
             <div id="apartado1" class="collapse hide">
-            <h3>Características</h3>
+            <h3 class="caracteristicas">Características</h3>
             <p><ol>
-                    <div class="greencontainer"><li>Las órbitas oculares están dirigidas hacia delante y la visión es estereoscópica. </li>
+                <div class="slideshow-container">
+                    <div class="greencontainer1"><li>Las órbitas oculares están dirigidas hacia delante y la visión es estereoscópica. </li>
                     <img class="eyes" src="./img/ojos_prim.jpg"></div>
-                    <div class="greencontainer"><li>El antebrazo tiene una estructura ósea y muscular que les permite trepar.</li>
+                    <div class="greencontainer1"><li>El antebrazo tiene una estructura ósea y muscular que les permite trepar.</li>
                     <img class="arms" src="./img/antebrazo_prim.jpg"></div>
-                    <div class="greencontainer"><li>Presentan un dedo pulgar oponible en las cuatro extremidades (excepto la especie humana, que solo lo tiene en las manos).</li>
+                    <div class="greencontainer1"><li>Presentan un dedo pulgar oponible en las cuatro extremidades (excepto la especie humana, que solo lo tiene en las manos).</li>
                     <img class="finger" src="./img/oponible_prim.jpg"></div>
-                    <div class="greencontainer"><li>Poseen uñas planas en lugar de garras. </li>
+                    <div class="greencontainer1"><li>Poseen uñas planas en lugar de garras. </li>
                     <img class="nails" src="./img/garras_prim.jpg"></div>
-                </ol></p>
-        </div>
-            </a>
+                </div>
+                
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <div style="text-align:center;">
+                        <a href="#top"><button> Vuelve al inicio</button></a>
+                </div>
+            </ol></p>
+            </div>
+        </a>
         </section> 
 
         <!--Características de la hominización-->
         <section id="contenedor" class= "hominizacion">
         <a name="hominizacion">
             <div class="primatesdiv">
-            <h2>La hominización</h2>
+            <h2 style="font-family: 'Anton', sans-serif;">La hominización</h2>
             </div>
             <div style="text-align:center;">
                     <button type="button" data-toggle="collapse" data-target="#apartado2"> Haz click para saber más</button>
             </div>
             <div id="apartado2" class="collapse hide">
-            <h3>Características</h3>
+            <h3 class="caracteristicas">Características</h3>
                 <p><ul>
-                    <div class="greencontainer"><li>Adquisición de la marcha bípeda y brazos más cortos que las piernas.</li>
+                <div class="slideshow-container2">
+                    <div class="greencontainer2"><li>Adquisición de la marcha bípeda y brazos más cortos que las piernas.</li>
                     <img class="bipedism" src="./img/brazos_hom.jpg"></div>
-                    <div class="greencontainer"><li>Columna vertebral con cuatro curvaturas.</li>
+                    <div class="greencontainer2"><li>Columna vertebral con cuatro curvaturas.</li>
                     <img class="spine" src="./img/columna_hom.jpg"></div>
-                    <div class="greencontainer"><li>Aumento de la capacidad craneal hasta 1500 cm3, cráneo globoso, disminución del prognatismo y de los arcos superciliares.</li>
+                    <div class="greencontainer2"><li>Aumento de la capacidad craneal hasta 1500 cm3, cráneo globoso, disminución del prognatismo y de los arcos superciliares.</li>
                     <img class="skull" src="./img/prognatismo_hom.jpg"></div>
-                    <div class="greencontainer"><li>Foramen magnum en posición inferior.</li>
+                    <div class="greencontainer2"><li>Foramen magnum en posición inferior.</li>
                     <img class="magnum" src="./img/foramen_hom.jpg"></div>
-                    <div class="greencontainer"><li>Mandíbula semicircular.</li>
+                    <div class="greencontainer2"><li>Mandíbula semicircular.</li>
                     <img class="jaw" src="./img/mandibula_hom.jpg"></div>
-                    <div class="greencontainer"><li>Reducción de tamaño de los caninos.</li>
+                    <div class="greencontainer2"><li>Reducción de tamaño de los caninos.</li>
                     <img class="teeth" src="./img/caninos_hom.jpg"></div>
-                    <div class="greencontainer"><li>Adquisición de racionalidad, lenguaje y capacidad de abstracción y creación de manifestaciones artísticas.</li>
+                    <div class="greencontainer2"><li>Adquisición de racionalidad, lenguaje y capacidad de abstracción y creación de manifestaciones artísticas.</li>
                     <img class="paint" src="./img/arte_hom.jpg"></div>
-                    <div class="greencontainer"><li>Capacidad para la creación de herramientas.</li>
+                    <div class="greencontainer2"><li>Capacidad para la creación de herramientas.</li>
                     <img class="tools" src="./img/herramientas_hom.jpg"></div>
-                </ul></p>
+                </div>
+                    
+                <div class="dot-container2">
+                    <span class="dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot2" onclick="currentSlide2(2)"></span>
+                    <span class="dot2" onclick="currentSlide2(3)"></span>
+                    <span class="dot2" onclick="currentSlide2(4)"></span>
+                    <span class="dot2" onclick="currentSlide2(5)"></span>
+                    <span class="dot2" onclick="currentSlide2(6)"></span>
+                    <span class="dot2" onclick="currentSlide2(7)"></span>
+                    <span class="dot2" onclick="currentSlide2(8)"></span>
+                </div>
+                <div style="text-align:center;">
+                        <a href="#top"><button> Vuelve al inicio</button></a>
+                </div>
+            </ul></p>
             </div>
         </a>
         </section>
@@ -98,14 +128,14 @@
         <section id="contenedor" class= "hominidos">
         <a name="hominidos" >
             <div class="primatesdiv">
-            <h2>Los homínidos</h2>
+            <h2 style="font-family: 'Anton', sans-serif;">Los homínidos</h2>
             </div>
             <!-- Árbol filogenético interactivo-->
             <div style="text-align:center;">
                     <button type="button" data-toggle="collapse" data-target="#apartado3" onclick="imageMapResize();"> Haz click para saber más</button>
             </div>
             <div id="apartado3" class="collapse hide">
-                <h3 style="text-align:center;">Árbol filogenético de los homínidos</h3>
+                <h3 style="text-align:center;font-family: 'Anton', sans-serif;">Árbol filogenético de los homínidos</h3>
                 <img class="tree" src="./img/evolutionarytree.jpg" alt="Evolution Tree" usemap="#tree" onmouseleave="imageMapResize();" onresize="imageMapResize();">
                 <map name="tree">
                     <area shape="rect" coords ="511,328,651,503" alt="Australopithecus" href="#australopithecus" title = "Haz click aquí para saber más">   
@@ -120,7 +150,7 @@
                 <!--Tablas con características de cada grupo de homínidos-->
                 <div class="greencontainer">
                 <a name="australopithecus"></a>
-                <b><h2>Australopithecus</h2></b>
+                <b><h2 style="font-family: 'Anton', sans-serif;">Australopithecus</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -141,11 +171,13 @@
                 </table> 
                 <img class="australopithecus_body" src="./img/australopithecus_body.jpg">
                 <img class="australopithecus_skull" src="./img/australopithecus_skull.jpg">
+
+                <p><a href="#hominidos"><button style="margin-top: 20px"> Vuelve al árbol</button></a></p>
                 </div>
 
                 <div class="greencontainer">
                 <a name="habilis"></a>
-                <b><h2>Homo habilis</h2></b>
+                <b><h2 style="font-family: 'Anton', sans-serif;">Homo habilis</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -166,11 +198,13 @@
                 </table> 
                 <img class="habilis_body" src="./img/habilis_body.jpg">
                 <img class="habilis_skull" src="./img/habilis_skull.jpg">
+
+                <p><a href="#hominidos"><button style="margin-top: 20px"> Vuelve al árbol</button></a></p>
                 </div>
 
                 <div class="greencontainer">
                 <a name="ergaster"></a>
-                <b><h2>Homo ergaster</h2></b>
+                <b><h2 style="font-family: 'Anton', sans-serif;">Homo ergaster</h2></b>
                 <table id="tabla">
                      <tr>
                          <th>Edad</th>
@@ -191,11 +225,13 @@
                 </table>
                 <img class="ergaster_body" src="./img/ergaster_body.jpg">
                 <img class="ergaster_skull" src="./img/ergaster_skull.jpg">
+
+                <p><a href="#hominidos"><button style="margin-top: 20px"> Vuelve al árbol</button></a></p>
                 </div>
 
                 <div class="greencontainer">
                 <a name="erectus"></a>
-                <b><h2>Homo erectus</h2></b>
+                <b><h2 style="font-family: 'Anton', sans-serif;">Homo erectus</h2></b>
                 <table id="tabla">
                     <tr>
                          <th>Edad</th>
@@ -216,11 +252,13 @@
                 </table>
                 <img class="erectus_body" src="./img/erectus_body.jpg">
                 <img class="erectus_skull" src="./img/erectus_skull.jpg">
+
+                <p><a href="#hominidos"><button style="margin-top: 20px"> Vuelve al árbol</button></a></p>
                 </div>
 
                 <div class="greencontainer">
                 <a name="antecessor"></a>
-                <b><h2>Homo antecessor</h2></b>
+                <b><h2 style="font-family: 'Anton', sans-serif;">Homo antecessor</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -241,11 +279,13 @@
                 </table>
                 <img class="antecessor_body" src="./img/antecessor_body.jpg">
                 <img class="antecessor_skull" src="./img/antecessor_skull.jpg">
+
+                <p><a href="#hominidos"><button style="margin-top: 20px"> Vuelve al árbol</button></a></p>
                 </div>
 
                 <div class="greencontainer">
                 <a name="neanderthalensis"></a>
-                <b><h2>Homo neanderthalensis</h2></p>
+                <b><h2 style="font-family: 'Anton', sans-serif;">Homo neanderthalensis</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -266,11 +306,13 @@
                 </table>
                 <img class="neanderthalensis_body" src="./img/neanderthalensis_body.jpg">
                 <img class="neanderthalensis_skull" src="./img/neanderthalensis_skull.jpg">
+
+                <p><a href="#hominidos"><button style="margin-top: 20px"> Vuelve al árbol</button></a></p>
                 </div>
 
                 <div class="greencontainer">
                 <a name="sapiens"></a>
-                <b><h2>Homo sapiens</h2> </b>
+                <b><h2 style="font-family: 'Anton', sans-serif;">Homo sapiens</h2></b>
                 <table id="tabla">
                     <tr>
                         <th>Edad</th>
@@ -291,6 +333,8 @@
                 </table>
                 <img class="sapiens_body" src="./img/sapiens_body.jpg">
                 <img class="sapiens_skull" src="./img/sapiens_skull.jpg">
+
+                <p><a href="#hominidos"><button style="margin-top: 20px"> Vuelve al árbol</button></a></p>
                 </div>
             </div>
             </a>
@@ -300,7 +344,7 @@
         <section id="contenedor" class= "test">
         <a name="test">
             <div class="primatesdiv">
-            <h2>Resuelve estas cuestiones</h2>
+            <h2 style="font-family: 'Anton', sans-serif;">Resuelve estas cuestiones</h2>
             </div>
             <div style="text-align:center;">
                     <button type="button" data-toggle="collapse" data-target="#apartado4"> Haz click para saber más</button>
@@ -315,27 +359,35 @@
         <section id="contenedor" class= "sobremi">
         <a name="yo">
             <div class="primatesdiv">
-            <h2>Currículum</h2>
+            <h2 style="font-family: 'Anton', sans-serif;">Currículum</h2>
             </div>  
             <div style="text-align:center;">
                     <button type="button" data-toggle="collapse" data-target="#apartado5"> Haz click para saber más</button>
             </div>
             <div id="apartado5" class="collapse hide">
-            <p><b>Estudios</b></p>
+            <p style="text-align:center" ><b style="font-family: 'Anton', sans-serif;font-size: 20px;">Estudios</b></p>
+            <div class="greencontainer3">
             <ul>
-                <li>Grado en Biología por la Universidad Autónoma de Madrid. 
+                <li style="padding-top: 25px"><i class="fas fa-book fa-lg"></i>   Grado en Biología por la Universidad Autónoma de Madrid. 
                     </br><i>Junio 2016 </i></li>
-                <li>Máster Formación Profesorado
+                <li><i class="fas fa-book fa-lg"></i>   Máster Formación Profesorado
                     </br><i>Julio 2017</i></li>
-                <li>Curso Desarrollo Front-End Generation Spain e Incyde.
+                <li><i class="fas fa-book fa-lg"></i>   Curso Desarrollo Front-End Generation Spain e Incyde.
                     </br><i> Febrero 2018.</i></li>
                 <ul>
+                <div class="smallcontainer">
                 <li> Software de control de versiones (GIT) con las herramientas Sourcetree y TortoiseGit. </li>
                 <li> XML, HTML y XHTML. </li>
                 <li> JavaScript. </li>
                 <li> CSS3. </li> 
                 <li>HTML5.</li>
+                <li>JQuery.</li>
+                <li>NodeJS.</li>
+                <li>Angular.</li>
+                <li>Bootstrap.</li>
+                </div>
                 </ul> 
+            </div>
             </ul>
             
             <!--Subapartado de habilidades con js-->

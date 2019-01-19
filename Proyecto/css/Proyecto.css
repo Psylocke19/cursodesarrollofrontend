@@ -71,6 +71,105 @@
     color: black; 
     }
 
+.caracteristicas
+    {
+    width: 75%; 
+    margin-right: auto;
+    margin-left: auto; 
+    text-align: center; 
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    }
+
+ol li
+    {
+    font-size: 20px; 
+    }
+
+ul li
+    {
+    font-size: 20px; 
+    }
+
+/* Slideshows de los primeros apartados */
+
+/* Contenedor con todos los slides */
+.slideshow-container
+    {
+    position: relative; 
+    background: white; 
+    width: 75%; 
+    margin-right: auto;
+    margin-left: auto; 
+    }
+
+.slideshow-container2
+    {
+    position: relative; 
+    background: white; 
+    width: 75%; 
+    margin-right: auto;
+    margin-left: auto; 
+    }
+
+/* Contenedor de los puntos de abajo */
+.dot-container 
+    {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto; 
+    }
+
+.dot-container2 
+    {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto; 
+    }
+
+/* Puntos */
+.dot 
+    {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+.dot2
+    {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+/* Sombra negra al poner el ratón sobre los puntos */
+.active, .dot:hover 
+    {
+    background-color: #717171;
+    }
+
+.active, .dot2:hover 
+    {
+    background-color: #717171;
+    }
+
+
 .primates 
     {
     top: 80px; 
@@ -102,7 +201,8 @@ button {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+        margin-top: 20px; 
+        margin-bottom: 20px; 
         cursor: pointer;
       }
 
@@ -126,6 +226,7 @@ li
     {
     background: #4CAF50; 
     width: 75%; 
+    height: 620px;
     padding-bottom: 30px;
     text-align: center; 
     margin-right: auto;
@@ -135,13 +236,66 @@ li
     font-size: 6em;  
     overflow: auto;
     }
-    
+
+.greencontainer1
+    {
+    background: #4CAF50; 
+    width: 75%; 
+    height: 450px;
+    padding-bottom: 30px;
+    text-align: center; 
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    font-size: 6em;  
+    overflow: auto;
+    display: none; 
+    }
+
+.greencontainer2
+    {
+    background: #4CAF50; 
+    width: 75%; 
+    height: 450px;
+    padding-bottom: 30px;
+    text-align: center; 
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    font-size: 6em;  
+    overflow: auto;
+    display: none; 
+    }
+
+.greencontainer3
+    {
+    background: #4CAF50; 
+    width: 75%; 
+    height: 550px;
+    padding-bottom: 0px;
+    text-align: center; 
+    margin-right: auto;
+    margin-left: auto; 
+    margin-bottom: 0; 
+    font-size: 6em;  
+    overflow: auto;
+    }
+
+.smallcontainer
+    {
+    background-color: white; 
+    width: 30%; 
+    margin-right: auto;
+    margin-left: auto;
+    }
 
 /* Resto de imágenes */
 .eyes, .arms, .finger, .nails, .bipedism, .spine, .skull, .magnum, .jaw, .teeth, .paint, .tools, .australopithecus_body, .australopithecus_skull, .habilis_body, .habilis_skull, .ergaster_body, .ergaster_skull, .erectus_body, .erectus_skull, .antecessor_body, .antecessor_skull, .neanderthalensis_body, .neanderthalensis_skull, .sapiens_body, .sapiens_skull
     {
-    height: auto; 
-    width: 30%; 
+    height: 310px; 
+    width: auto; 
     max-height: 600px; 
     margin-top: 20px; 
     }
