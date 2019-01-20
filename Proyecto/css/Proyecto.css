@@ -221,10 +221,10 @@ li
 .greencontainer3
     {
     background: #4CAF50; 
-    width: 75%; 
-    height: 550px;
+    width: 50%; 
+    height: 650px;
     padding-bottom: 0px;
-    text-align: center; 
+    text-align: justify; 
     margin-right: auto;
     margin-left: auto; 
     margin-bottom: 0; 
@@ -235,9 +235,25 @@ li
 .smallcontainer
     {
     background-color: white; 
-    width: 30%; 
+    width: 70%; 
+    height: 350px; ;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 50%; 
+    }
+
+.containerSkills
+    {
+    background:white;  
+    width: 50%; 
+    height: 350px;
+    padding-bottom: 0px;
+    text-align: justify; 
+    margin-right: auto;
+    margin-left: auto; 
+    margin-bottom: 0; 
+    font-size: 20px;  
+    overflow: auto;
     }
 
 /* Resto de imágenes */
@@ -295,11 +311,12 @@ li
     font-size: medium; 
     }
 
+
 /* Barras blancas de skills */
 #myProgress
     {
     background-color: white; 
-    width: 50%; 
+    width: 100%; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     color: white; 
     }
@@ -307,7 +324,7 @@ li
 /* Barras verdes de skills */
 #myBarHTML, #myBarCSS, #myBarBG, #myBarJS
     {
-    background-color:#376137; 
+    background-color: #4CAF50;  
     width: 1%; 
     }
 

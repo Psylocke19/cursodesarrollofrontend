@@ -66,3 +66,5 @@ function showSlides(n, containerName, dotName)
 //Esto inicializa todos los slides
 showSlides(1, 'greencontainer1', 'dot');
 showSlides(1, 'greencontainer2', 'dot2');
+
+// Creación de un cuestionario tipo test
