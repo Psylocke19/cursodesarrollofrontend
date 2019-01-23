@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clases y objetos</h1>
+    <script>
+        // Sólo en EcmaScript 6
+        class Rectangulo
+            {
+            // Aquí definimos las características físicas que todo objeto de esta clase debe tener
+            constructor(nuevoAncho, nuevoAlto)
+                {
+                this.ancho = nuevoAncho; // this = este objeto (también lo puedes encontrar como self)
+                this.alto = nuevoAlto; 
+                }
+            // Sólo ponemos el nombre del método y los parámetros entre paréntesis, seguidos del cuerpo
+            area() // Método
+                {
+                var areaTotal = this.ancho * this.alto; 
+                return areaTotal; 
+                }        
+            perimetro()
+                {
+                var perimetroTotal = this.ancho + this.ancho + this.alto + this.alto; 
+                return perimetroTotal;  
+                }  
+            }
+        
+        var unRect = new Rectangulo(5,3); 
+        document.write("<h3>" + unRect.area() + "</h3>"); 
+        document.write ("<h3>" + unRect.perimetro() + "</h3>"); 
+
+        // Construyendo clase círculo
+
+        class Circulo
+            {
+            constructor(nuevoRadio)
+                {
+                this.radio = nuevoRadio;
+                }
+            areaCirc()
+                {
+                var areaTotal = this.radio * this.radio * Math.PI; 
+                return areaTotal; 
+                }        
+            perimetroCirc()
+                {
+                var perimetroTotal = this.radio * 2 *  Math.PI;
+                return perimetroTotal;  
+                }  
+            }
+
+        var unCirc = new Circulo(5); 
+        document.write (`Radio: ${unCirc.radio} <br/>
+                        Area: ${unCirc.areaCirc()} <br/>
+                        Perimetro: ${unCirc.perimetroCirc()}`);
+        document.write ("<br/>"); 
+
+
+        // A partir de nombre y edad, crear un método que nos diga si la persona es adulta o no
+        
+        class Persona
+            {
+            constructor (nuevoNombre, fechaNacimiento)
+                {
+                this.nombre = nuevoNombre; 
+                this.edad = fechaNacimiento.getFullYear(); 
+                var fechaActual = new Date(); 
+                // Cálculo de la edad en función del mes y el día
+                this.edad = fechaActual.getFullYear() - fechaNacimiento.getFullYear(); 
+                }
+            mayorEdad()
+                {
+                if (this.edad >= 18)
+                    {
+                    var edadMayor = this.nombre + " " + "es mayor de edad";  
+                    return edadMayor 
+                    }
+                else
+                    {
+                    var edadMenor = this.nombre + " " + "es menor de edad"; 
+                    return edadMenor; 
+                    }
+                }
+            }
+
+            var edadPersona = new Persona("Paula", new Date(1993, 5, 30)); 
+            document.write ("<h3>" + edadPersona.mayorEdad() + "</h3>"); 
+            edadPersona.edad = 10; // Cambiando la edad de 30 a 10
+            document.write ("<h3>" + edadPersona.mayorEdad() + "</h3>"); 
+
+    </script>
+</body>
+</html>

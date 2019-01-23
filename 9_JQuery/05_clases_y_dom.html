@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Aquí hemos creado un ejercicio en el que el usuario mete una fecha, ésta se guarda y se muestra en un alert-->
+    <br/>
+    <input type="button" id="boton" value="Probar"></input>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        // Botón para llamar a las funciones de día, mes y año
+        $(document).ready(function()
+            {
+            $("#boton").click(function()
+                {
+                alert(fechaNacim.getDia()); 
+                })
+            $("#boton").click(function()
+                {
+                alert(fechaNacim.getMes()); 
+                })
+            $("#boton").click(function()
+                {
+                alert(fechaNacim.getAnio()); 
+                })
+            }); 
+
+        // Creamos una clase llamada FechaDom y creamos tres input
+        class FechaDom
+            {
+            constructor (dia, mes, anio, id)
+                {
+                this.id = id; 
+                $("body").append(`<input type="number" id="${id}dia" value="${dia}"/>
+                                    <input type="number" id="${id}mes" value="${mes}"/>
+                                    <input type="number" id="${id}anio" value="${anio}"/>`); 
+                }
+            // Obtenemos el valor del día a partir de su id, y lo mismo para mes y año
+            getDia()
+                {
+                var valorDia = parseInt($(`#${this.id}dia`).val()); 
+                if (isNaN(valorDia))
+                    {
+                    alert ("Día tiene que ser un número");
+                    }
+                else if (valorDia < 0 || valorDia > 31)
+                    {
+                    alert ("Día fuera de rango"); 
+                    }
+                return valorDia; 
+                }
+            getMes()
+                {
+                return parseInt($(`#${this.id}mes`).val()); 
+                }
+            getAnio()
+                {
+                return parseInt($(`#${this.id}anio`).val());
+                }
+            }
+
+        var dateActual = new Date(); 
+        var fechaNacim = new FechaDom(
+                            dateActual.getDate(),
+                            dateActual.getMonth(),
+                            dateActual.getFullYear()); 
+        
+        document.write ("<br/>"); 
+        var fechaNacim = new FechaDom(7, 9 /* octubre */, 1982); 
+
+
+        /*  Crear campos de fecha (FechaDom) a partir de la fecha de cumpleaños.
+            Pensar cómo mejorar este "control": 
+            - Añadir etiquetas a los campos.
+            - Cómo hacer para obtener día, mes, etc, con los métodos getDia(), etc() */
+    
+    </script> 
+</body>
+</html>
