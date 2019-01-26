@@ -349,11 +349,56 @@
             <div style="text-align:center;">
                     <button type="button" data-toggle="collapse" data-target="#apartado4"> Haz click para saber más</button>
             </div>
-            <div id="apartado4" class="collapse hide">
-            <div id="quiz"></div>
-            <div style="text-align: center"><button id="submit">Comprueba los resultados</button></div>
-            <div id="results"></div>
-            </div>
+            <ul id="apartado4" class="collapse hide">
+                <li>
+                    <h3>How many letters are there in "JS"?</h3>
+                    <div id="q_0_ans_A">
+                        <input type="radio" name="question0" value="A">2<br>
+                    </div>
+                    <div id="q_0_ans_B">
+                        <input type="radio" name="question0" value="B">1<br>
+                    </div>
+                    <div id="q_0_ans_B">
+                        <input type="radio" name="question0" value="C">3<br>
+                    </div>
+                    <div id="q_0_ans_B">
+                        <input type="radio" name="question0" value="D">4<br>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>How many letters are there in "BMX"?</h3>
+                    <div id ="q_1_ans_A">
+                        <input type="radio" name="question1" 
+                        value="A">2<br>
+                    </div>
+                    <div id ="q_1_ans_B">
+                        <input type="radio" name="question1" value="B">1<br>
+                    </div>
+                    <div id ="q_1_ans_C">
+                    <input type="radio" name="question1" value="C">3<br>
+                    </div>
+                    <div id ="q_1_ans_D"></div>
+                        <input type="radio" name="question1" value="D">4<br>
+                    </div>  
+                  </li>
+                  <li>
+                    <h3>How many letters are there in "A"?</h3>
+                    <div id ="q_2_ans_A">
+                        <input type="radio" name="question2" value="A">2<br>
+                    </div>
+                    <div id ="q_2_ans_B">
+                        <input type="radio" name="question2" value="B">1<br>
+                    </div>
+                    <div id ="q_2_ans_C">
+                        <input type="radio" name="question2" value="C">3<br>
+                    </div>
+                    <div id ="q_2_ans_D">
+                        <input type="radio" name="question2" value="D">4<br>
+                    </div>
+                  </li>  
+            </ul>
+            <button onclick="devolverPuntuacion()">Ver resultados</button>
+            <div id="resultadosAcertados"></div>
             </a>
         </section>
 

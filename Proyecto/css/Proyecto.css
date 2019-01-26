@@ -311,6 +311,12 @@ li
     font-size: medium; 
     }
 
+/* Código CSS para decorar el apartado de cuestiones tipo test*/
+#resultadosAcertados
+    {
+    display: none; 
+    background-color: #4CAF50; 
+    }
 
 /* Barras blancas de skills */
 #myProgress

@@ -67,4 +67,64 @@ function showSlides(n, containerName, dotName)
 showSlides(1, 'greencontainer1', 'dot');
 showSlides(1, 'greencontainer2', 'dot2');
 
+
 // Creación de un cuestionario tipo test
+var answers = ["A","C","B"];  
+var total = answers.length;
+
+function obtenerResultadoMarcado(questionName)
+  {
+    // Identificar el grupo de preguntas por su name
+    var grupoPreguntas = document.getElementsByName(questionName); 
+    for(var y=0; y<grupoPreguntas.length; y++)
+      {
+      // Devuelve el valor seleccionado
+      if(grupoPreguntas[y].checked)
+        {
+        return grupoPreguntas[y].value;  
+        }
+      }        
+  }
+
+function obtenerPuntuacion()
+  {
+  var puntuacion = 0;
+  for (var i=0; i<total; i++)
+    {
+    // Incrementar la puntuación sólo si...
+    if(obtenerResultadoMarcado("question"+i) === answers[i]) 
+      {
+      puntuacion += 1; 
+      }
+    }
+  return puntuacion; 
+  }
+
+function devolverPuntuacion()
+  {
+    marcarCorrectos();
+    mostrarPuntuacion(); 
+  }
+
+function marcarCorrectos(){
+  for(var numPregunta = 0; numPregunta< total; numPregunta++){
+    
+      var idRespuestaCorrecta= "q_" + numPregunta + "_ans_" + answers[numPregunta];
+
+      document.getElementById(idRespuestaCorrecta).style.backgroundColor = "green";
+  }
+}
+
+function mostrarPuntuacion()
+  {
+    
+    //Se crea un elemento html de tipo <p>
+    var element = document.createElement('p');
+    //Se le pone el texto 
+    element.appendChild(document.createTextNode("Tu puntuación es de " + obtenerPuntuacion() + "/" + total));
+    //Se pone como hijo de "resultadosAcertados"
+    document.getElementById("resultadosAcertados").appendChild(element);
+
+    //haces visibles resultados acertados
+    document.getElementById ("resultadosAcertados").style.display = "block";
+  }
