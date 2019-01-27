@@ -69,7 +69,7 @@ showSlides(1, 'greencontainer2', 'dot2');
 
 
 // Creación de un cuestionario tipo test
-var answers = ["A","C","B"];  
+var answers = ["C","A","D","C","B","A","D"];  
 var total = answers.length;
 
 function obtenerResultadoMarcado(questionName)
@@ -106,24 +106,27 @@ function devolverPuntuacion()
     mostrarPuntuacion(); 
   }
 
-function marcarCorrectos(){
-  for(var numPregunta = 0; numPregunta< total; numPregunta++){
-    
-      var idRespuestaCorrecta= "q_" + numPregunta + "_ans_" + answers[numPregunta];
-
-      document.getElementById(idRespuestaCorrecta).style.backgroundColor = "green";
+function marcarCorrectos()
+  {
+  for(var numPregunta = 0; numPregunta< total; numPregunta++)
+    {
+    var idRespuestaCorrecta= "q_" + numPregunta + "_ans_" + answers[numPregunta];
+    document.getElementById(idRespuestaCorrecta).setAttribute("style", "border: 2px solid green; border-radius:12px; padding-top: 8px;")
+    }
   }
-}
 
 function mostrarPuntuacion()
   {
     
     //Se crea un elemento html de tipo <p>
-    var element = document.createElement('p');
+    var element = document.createElement('p'); 
+
     //Se le pone el texto 
     element.appendChild(document.createTextNode("Tu puntuación es de " + obtenerPuntuacion() + "/" + total));
     //Se pone como hijo de "resultadosAcertados"
     document.getElementById("resultadosAcertados").appendChild(element);
+    element.setAttribute(
+      "style", "font-size: 20px; font-family: 'Anton', sans-serif; margin-top: 8px; ");
 
     //haces visibles resultados acertados
     document.getElementById ("resultadosAcertados").style.display = "block";
