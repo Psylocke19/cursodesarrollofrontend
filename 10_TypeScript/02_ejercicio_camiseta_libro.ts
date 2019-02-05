@@ -1,45 +1,91 @@
-interface IProducto
+interface IProducto // Todo es público
    {
-   precio: number; 
-   mostrar() 
+   //precio: number; 
+   mostrar(): void; 
    }
 
-class Camiseta implements IProducto
+class Producto implements IProducto
    {
-   precio: number; 
-   talla: number; 
-   color: string; 
+   private precio: number; 
+   private nombre: string;  
+   constructor(pre: number, nom: string)
+      {
+      this.precio = pre; 
+      this.nombre = nom;  
+      }
    mostrar()
       {
-      if (productoElegido == "camiseta")
-         {
-         let prod = new Camiseta(talla, color);  
-         let precio; 
-         let talla; 
-         let color;  
-         }
+      console.log (`Producto ${this.nombre}, precio: ${this.precio}$`); 
+      }
+   // Métodos de acceso
+   // Precio es de lectura y escritura
+   getPrecio(): number
+      {
+      return this.precio; 
+      }
+   setPrecio(nuevoPrecio: number): void   
+      {
+      this.precio = nuevoPrecio; 
+      }
+   // Nombre es de sólo lectura
+   getNombre(): string
+      {
+      return this.nombre; 
       }
    }
 
-class Libro implements IProducto
+/* Ejercicios:
+   1. Poner público lo público y privado lo privado.
+   2. Terminar de heredar libro con sus métodos de acceso (getter y setter). 
+   3. Usarlos (instanciarlos) abajo (new, etc...). 
+   4. Validar datos: precio nunca puede ser negativo y no puede haber nombres, tallas, títulos... vacíos*/
+
+class Camiseta extends Producto
    {
-   precio: number; 
+   talla: string; 
+   color: string; 
+   // Como crear un constructor heredando. Pediremos los datos del hijo del padre
+   constructor(pre: number, tal: string, col: string)
+      {
+      super (pre, "camiseta"); // Llamada al constructor del padre
+      // this.precio = pre; Mal, ya que precio es privado
+      // this.setPrecio(pre); Llamando al método de acceso se puede
+                              // No se puede por el constructor
+      this.talla = tal; 
+      this.color = col; 
+      }
+   mostrar() // Método obligatorio
+      {
+      console.log ("Info camiseta: " + this.getPrecio() + " euros"); 
+      console.log ("        talla: " + this.talla); 
+      console.log ("        color: " + this.color); 
+      }
+   }
+
+class Libro extends Producto
+   { 
    titulo: string; 
-   mostrar()
+   constructor (pre: number, tit: string)
+      {
+      super (pre, "libro")
+      this.titulo = tit; 
+      }
+   mostrar() // Método obligatorio
+      {
+      console.log ("Info libro: " + this.getPrecio() + " euros"); 
+      console.log ("        título: " + this.titulo); 
+      }
    }
 
-let productoElegido: string; 
+let miLibro: Libro = new Libro (10, "It"); 
+let miCamiseta: Camiseta = new Camiseta (12, "M", "negro"); 
 
+let algunProducto: IProducto; 
+algunProducto = new Camiseta (15, "L", "blanco"); 
+algunProducto.mostrar(); 
+// Cambiamos a otro producto
+algunProducto = new Libro (15, "El resplandor"); 
+algunProducto.mostrar(); 
 
-else if (productoElegido == "libro")
-   {
-   let libro = new Libro(); 
-   let precio = 8; 
-   let titulo = "It"; 
-   }
-
-let productoElegido: IProducto = {precio: 10};
-
-let prod: IProducto; 
-prod = new Camiseta(38, "black"); 
-
+let tipo1: string = "cam";
+let tipo2: string = "lib"; 
